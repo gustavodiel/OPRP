@@ -32,7 +32,8 @@ matrix_t *matrix_sort(matrix_t *A);
 
 void matrix_print(matrix_t *m);
 
-double* quicksort(double*, int, int);
-void swap(double*, double*);
+int partition (double vector[], int low, int high);
+void quick_sort(double vector[], int low, int high);
+void swap(double *a, double *b);
 
 #endif

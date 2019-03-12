@@ -7,4 +7,4 @@ This repository is where I'll be updating my parallel computing class code.
 
 
 ## Sub-Projects
-- [<strong>Matrix</strong>](/matrix/): In this base code, we will, eventually, use multiple techniques to parallelize and gain performance.
+- [<strong>Matrix</strong>](/matrix/): Base code to apply, eventualy, multiple techniques to parallelize and gain performance.

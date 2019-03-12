@@ -2,7 +2,7 @@
 #GNU Makefile
 
 CC = gcc 
-CCFLAGS = -Wall 
+CCFLAGS = -Wall -Ofast
 LDFLAGS = 
 TARGET = main
 
@@ -15,7 +15,6 @@ TARGET = main
 test: $(TARGET)
 	@clear
 	@./.scripts/title "Running"
-	@./$(TARGET) 3 3
 
 # Dependencias
 

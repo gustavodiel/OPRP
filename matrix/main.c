@@ -11,7 +11,7 @@ double wtime()
    return t.tv_sec + t.tv_usec / 1000000.0;
 }
 
-void benchmark(int, int);
+void verbose_sort(int, int);
 
 int main(int argc, char **argv)
 {
@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 
     start_time = wtime();
 
-    benchmark(nrows, ncols);
+    verbose_sort(nrows, ncols);
 
     end_time = wtime();
 
@@ -38,22 +38,22 @@ int main(int argc, char **argv)
     return EXIT_SUCCESS;
 }
 
-void benchmark(int rows, int cols) {
-    matrix_t *matrixA = matrix_create(3, 3);
+void verbose_sort(int rows, int cols) {
+    matrix_t *matrixA = matrix_create(rows, cols);
 
     matrix_randfill(matrixA);
 
     printf("\n\nMatrix A:\n");
-    matrix_print(matrixA);
+    // matrix_print(matrixA);
 
     printf("Sorting...");
 
     printf("\n\n");
-    matrix_t *resultado_sort;
-    resultado_sort = matrix_sort(matrixA);
+    matrix_t *resultado_sort = matrix_sort(matrixA);
 
         printf("\n\n");
 
-    matrix_print(resultado_sort);
+    // matrix_print(resultado_sort);
+    printf("Sorted\n");
 
 }

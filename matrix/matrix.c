@@ -121,41 +121,52 @@ matrix_t *matrix_sort(matrix_t *A)
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
 
-    double* vector = quicksort(A->data[0], 0, rows_final * cols_final);
+    memcpy(resultado->data[0], A->data[0], cols_final * rows_final * sizeof(double));
 
+    printf("We have:\n");
     int i;
     for (i = 0; i < rows_final * cols_final; i++) {
-        printf("%lf\n", vector[i]);
+        printf("%lf\n", A->data[0][i]);
+    }
+
+    printf("\nWe got:\n");
+
+    quick_sort(A->data[0], 0, rows_final * cols_final - 1);
+
+    for (i = 0; i < rows_final * cols_final; i++) {
+        printf("%lf\n", A->data[0][i]);
     }
 
     return resultado;
 }
 
-double* quicksort(double* vector, int start, int end) {
-    int middle = (end - start) * 0.5;
+int partition(double *vector, int low, int high)
+{
+    double pivot = vector[high];
+    int i = (low - 1);
 
-    int i = start;
-    int j = end - 1;
-
-    double pivot = vector[middle];
-
-    while(i <= j) {
-        while (vector[i] < pivot && i < end) i++;
-        while (vector[j] > pivot && j > start) j--;
-
-        if (i <= j) {
-            swap(&vector[i], &vector[j]);
+    for (int j = low; j <= high - 1; j++)
+    {
+        if (vector[j] <= pivot)
+        {
             i++;
-            j--;
+
+            swap(&vector[i], &vector[j]);
         }
     }
-    if (j > start)
-        vector = quicksort(vector, start, j + 1);
+    swap(&vector[i + 1], &vector[high]);
+    return (i + 1);
+}
 
-    if (i < end)
-        vector = quicksort(vector, i, end);
+void quick_sort(double *vector, int low, int high)
+{
+    if (low < high)
+    {
+        int part = partition(vector, low, high);
 
-    return vector;
+        quick_sort(vector, low, part - 1);
+        quick_sort(vector, part + 1, high);
+    }
 }
 
 void swap(double *a, double *b) {
