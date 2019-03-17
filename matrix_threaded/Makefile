@@ -1,28 +1,12 @@
 #
 #GNU Makefile
 
-CC = gcc 
-CCFLAGS = -Wall 
-LDFLAGS = 
+CC = gcc
+CCFLAGS = -Wall -lm
 TARGET = main
-
-%.o: %.c
-	@$(CC) $(CCFLAGS) -c $<
-
-%: %.o
-	@$(CC) $(LDFLAGS) $^ -o $@ 
-
-test: $(TARGET)
-	@clear
-	@./.scripts/title "Running"
-	@./$(TARGET) 3 3
-
-# Dependencias
-
-main: matrix.o main.c
-matrix.o: matrix.c matrix.h
+all:
+	$(CC) $(CCFLAGS) -o $(TARGET) src/matrix.c src/benchmarks.c src/main.c
 
 clean:
 	@./.scripts/title "Cleaning"
 	@rm -f *.o *~ $(TARGET)
-

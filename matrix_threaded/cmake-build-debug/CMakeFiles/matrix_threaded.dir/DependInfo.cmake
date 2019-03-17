@@ -4,15 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.c" "/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o"
-  "/home/d/Personal/Udesc/OPRP/matrix_threaded/src/main.c" "/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/main.c.o"
-  "/home/d/Personal/Udesc/OPRP/matrix_threaded/src/matrix.c" "/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/matrix.c.o"
+  "/home/d/UDESC/OPRP/matrix_threaded/src/benchmarks.c" "/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o"
+  "/home/d/UDESC/OPRP/matrix_threaded/src/main.c" "/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/main.c.o"
+  "/home/d/UDESC/OPRP/matrix_threaded/src/matrix.c" "/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/src/matrix.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../include"
   )
 
 # Targets to which this target links.

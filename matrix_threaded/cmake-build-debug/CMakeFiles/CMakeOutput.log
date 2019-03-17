@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_37fbd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_37fbd.dir/build.make CMakeFiles/cmTC_37fbd.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_37fbd.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_37fbd.dir/testCCompiler.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_37fbd
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37fbd.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_37fbd.dir/testCCompiler.c.o  -o cmTC_37fbd 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a0d95/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0d95.dir/build.make CMakeFiles/cmTC_a0d95.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0d95.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a0d95.dir/testCCompiler.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a0d95
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0d95.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a0d95.dir/testCCompiler.c.o  -o cmTC_a0d95 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_45d55/fast"
-/usr/bin/make -f CMakeFiles/cmTC_45d55.dir/build.make CMakeFiles/cmTC_45d55.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o   -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_45d55
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45d55.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o  -o cmTC_45d55 
+Run Build Command:"/usr/bin/make" "cmTC_d47d0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d47d0.dir/build.make CMakeFiles/cmTC_d47d0.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o   -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d47d0
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d47d0.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o  -o cmTC_d47d0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 8.2.1 20181127 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_45d55' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMNI8ZG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45d55 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_45d55' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d47d0' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdCcodl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d47d0 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d47d0' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_45d55/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_45d55.dir/build.make CMakeFiles/cmTC_45d55.dir/build]
-  ignore line: [make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o   -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_45d55]
-  ignore line: [/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45d55.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o  -o cmTC_45d55 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d47d0/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d47d0.dir/build.make CMakeFiles/cmTC_d47d0.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o   -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d47d0]
+  ignore line: [/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d47d0.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o  -o cmTC_d47d0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.1 20181127 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_45d55' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMNI8ZG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45d55 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d47d0' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdCcodl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d47d0 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccMNI8ZG.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccdCcodl.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_45d55] ==> ignore
+    arg [cmTC_d47d0] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -117,7 +117,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_45d55.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_d47d0.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -142,17 +142,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7601c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7601c.dir/build.make CMakeFiles/cmTC_7601c.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7601c.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7601c.dir/feature_tests.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7601c
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7601c.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7601c.dir/feature_tests.c.o  -o cmTC_7601c 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c5a75/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c5a75.dir/build.make CMakeFiles/cmTC_c5a75.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5a75.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c5a75.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c5a75
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5a75.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c5a75.dir/feature_tests.c.o  -o cmTC_c5a75 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -162,17 +162,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7007f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7007f.dir/build.make CMakeFiles/cmTC_7007f.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7007f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_7007f.dir/feature_tests.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7007f
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7007f.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7007f.dir/feature_tests.c.o  -o cmTC_7007f 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_11d31/fast"
+/usr/bin/make -f CMakeFiles/cmTC_11d31.dir/build.make CMakeFiles/cmTC_11d31.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11d31.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_11d31.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_11d31
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11d31.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_11d31.dir/feature_tests.c.o  -o cmTC_11d31 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -182,17 +182,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cc0c9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cc0c9.dir/build.make CMakeFiles/cmTC_cc0c9.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cc0c9.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_cc0c9.dir/feature_tests.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_cc0c9
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc0c9.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cc0c9.dir/feature_tests.c.o  -o cmTC_cc0c9 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_011d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_011d1.dir/build.make CMakeFiles/cmTC_011d1.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_011d1.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_011d1.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_011d1
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_011d1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_011d1.dir/feature_tests.c.o  -o cmTC_011d1 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -200,30 +200,30 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_90934/fast"
-/usr/bin/make -f CMakeFiles/cmTC_90934.dir/build.make CMakeFiles/cmTC_90934.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_90934.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_90934.dir/testCXXCompiler.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_90934
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90934.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_90934.dir/testCXXCompiler.cxx.o  -o cmTC_90934 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6d51f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6d51f.dir/build.make CMakeFiles/cmTC_6d51f.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6d51f.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6d51f.dir/testCXXCompiler.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_6d51f
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d51f.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_6d51f.dir/testCXXCompiler.cxx.o  -o cmTC_6d51f 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_227bd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_227bd.dir/build.make CMakeFiles/cmTC_227bd.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_227bd
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_227bd.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_227bd 
+Run Build Command:"/usr/bin/make" "cmTC_6a4d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a4d7.dir/build.make CMakeFiles/cmTC_6a4d7.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6a4d7
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a4d7.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a4d7 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -233,24 +233,24 @@ Thread model: posix
 gcc version 8.2.1 20181127 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_227bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLlLOoX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_227bd /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_227bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a4d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUQZsrH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a4d7 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a4d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_227bd/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_227bd.dir/build.make CMakeFiles/cmTC_227bd.dir/build]
-  ignore line: [make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_227bd]
-  ignore line: [/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_227bd.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_227bd ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6a4d7/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6a4d7.dir/build.make CMakeFiles/cmTC_6a4d7.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o -c /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6a4d7]
+  ignore line: [/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a4d7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a4d7 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -260,13 +260,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.2.1 20181127 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_227bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLlLOoX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_227bd /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a4d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUQZsrH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a4d7 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccLlLOoX.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccUQZsrH.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -282,7 +282,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_227bd] ==> ignore
+    arg [cmTC_6a4d7] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -291,7 +291,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_227bd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6a4d7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -314,17 +314,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cce05/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cce05.dir/build.make CMakeFiles/cmTC_cce05.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cce05.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_cce05.dir/feature_tests.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cce05
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cce05.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_cce05.dir/feature_tests.cxx.o  -o cmTC_cce05 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_f4017/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4017.dir/build.make CMakeFiles/cmTC_f4017.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4017.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_f4017.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f4017
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4017.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f4017.dir/feature_tests.cxx.o  -o cmTC_f4017 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -387,17 +387,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e692d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e692d.dir/build.make CMakeFiles/cmTC_e692d.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e692d.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_e692d.dir/feature_tests.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e692d
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e692d.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e692d.dir/feature_tests.cxx.o  -o cmTC_e692d 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_5be94/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5be94.dir/build.make CMakeFiles/cmTC_5be94.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5be94.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_5be94.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5be94
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5be94.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5be94.dir/feature_tests.cxx.o  -o cmTC_5be94 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -460,17 +460,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_003b4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_003b4.dir/build.make CMakeFiles/cmTC_003b4.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_003b4.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_003b4.dir/feature_tests.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_003b4
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_003b4.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_003b4.dir/feature_tests.cxx.o  -o cmTC_003b4 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ce72a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce72a.dir/build.make CMakeFiles/cmTC_ce72a.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce72a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_ce72a.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ce72a
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce72a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ce72a.dir/feature_tests.cxx.o  -o cmTC_ce72a 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -533,17 +533,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e5db7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e5db7.dir/build.make CMakeFiles/cmTC_e5db7.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e5db7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_e5db7.dir/feature_tests.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e5db7
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5db7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e5db7.dir/feature_tests.cxx.o  -o cmTC_e5db7 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_20162/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20162.dir/build.make CMakeFiles/cmTC_20162.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20162.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_20162.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_20162
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20162.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_20162.dir/feature_tests.cxx.o  -o cmTC_20162 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -606,17 +606,17 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f719e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f719e.dir/build.make CMakeFiles/cmTC_f719e.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f719e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_f719e.dir/feature_tests.cxx.o -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f719e
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f719e.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f719e.dir/feature_tests.cxx.o  -o cmTC_f719e 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ed9d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed9d4.dir/build.make CMakeFiles/cmTC_ed9d4.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed9d4.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_ed9d4.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ed9d4
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed9d4.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ed9d4.dir/feature_tests.cxx.o  -o cmTC_ed9d4 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -677,16 +677,16 @@ make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-bu
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6a58b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6a58b.dir/build.make CMakeFiles/cmTC_6a58b.dir/build
-make[1]: Entering directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6a58b.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_6a58b.dir/CheckIncludeFile.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_6a58b
-/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a58b.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6a58b.dir/CheckIncludeFile.c.o  -o cmTC_6a58b 
-make[1]: Leaving directory '/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8679b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8679b.dir/build.make CMakeFiles/cmTC_8679b.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8679b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8679b.dir/CheckIncludeFile.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8679b
+/home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8679b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8679b.dir/CheckIncludeFile.c.o  -o cmTC_8679b 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

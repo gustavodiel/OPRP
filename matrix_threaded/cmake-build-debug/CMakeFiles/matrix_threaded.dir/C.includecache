@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/benchmarks.h
+/home/d/UDESC/OPRP/matrix_threaded/include/benchmarks.h
 stdio.h
 -
 stdlib.h
@@ -16,17 +16,41 @@ pthread.h
 sys/time.h
 -
 
-../include/matrix.h
+/home/d/UDESC/OPRP/matrix_threaded/include/matrix.h
 stdlib.h
 -
 benchmarks.h
-../include/benchmarks.h
+/home/d/UDESC/OPRP/matrix_threaded/include/benchmarks.h
 
-/home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.c
-benchmarks.h
-/home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.h
+/home/d/UDESC/OPRP/matrix_threaded/src/benchmarks.c
+../include/benchmarks.h
+/home/d/UDESC/OPRP/matrix_threaded/include/benchmarks.h
 math.h
 -
-matrix.h
-/home/d/Personal/Udesc/OPRP/matrix_threaded/src/matrix.h
+../include/matrix.h
+/home/d/UDESC/OPRP/matrix_threaded/include/matrix.h
+
+/home/d/UDESC/OPRP/matrix_threaded/src/main.c
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+../include/matrix.h
+/home/d/UDESC/OPRP/matrix_threaded/include/matrix.h
+../include/benchmarks.h
+/home/d/UDESC/OPRP/matrix_threaded/include/benchmarks.h
+
+/home/d/UDESC/OPRP/matrix_threaded/src/matrix.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+string.h
+-
+../include/matrix.h
+/home/d/UDESC/OPRP/matrix_threaded/include/matrix.h
 

@@ -6,5 +6,5 @@ C_FLAGS = -g   -pthread
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/d/Personal/Udesc/OPRP/matrix_threaded/include 
+C_INCLUDES = 
 

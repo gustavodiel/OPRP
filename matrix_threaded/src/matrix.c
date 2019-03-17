@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include "matrix.h"
+#include "../include/matrix.h"
 
 matrix_t *matrix_create(int rows, int cols)
 {

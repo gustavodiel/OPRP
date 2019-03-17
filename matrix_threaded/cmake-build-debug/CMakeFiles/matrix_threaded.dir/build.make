@@ -43,10 +43,10 @@ RM = /home/d/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmak
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/d/Personal/Udesc/OPRP/matrix_threaded
+CMAKE_SOURCE_DIR = /home/d/UDESC/OPRP/matrix_threaded
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug
+CMAKE_BINARY_DIR = /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/matrix_threaded.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/matrix_threaded.dir/flags.make
 
 CMakeFiles/matrix_threaded.dir/src/matrix.c.o: CMakeFiles/matrix_threaded.dir/flags.make
 CMakeFiles/matrix_threaded.dir/src/matrix.c.o: ../src/matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/matrix_threaded.dir/src/matrix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/matrix.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/src/matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/matrix_threaded.dir/src/matrix.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/matrix.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/src/matrix.c
 
 CMakeFiles/matrix_threaded.dir/src/matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/matrix_threaded.dir/src/matrix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/Personal/Udesc/OPRP/matrix_threaded/src/matrix.c > CMakeFiles/matrix_threaded.dir/src/matrix.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/UDESC/OPRP/matrix_threaded/src/matrix.c > CMakeFiles/matrix_threaded.dir/src/matrix.c.i
 
 CMakeFiles/matrix_threaded.dir/src/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/matrix_threaded.dir/src/matrix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/Personal/Udesc/OPRP/matrix_threaded/src/matrix.c -o CMakeFiles/matrix_threaded.dir/src/matrix.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/UDESC/OPRP/matrix_threaded/src/matrix.c -o CMakeFiles/matrix_threaded.dir/src/matrix.c.s
 
 CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o: CMakeFiles/matrix_threaded.dir/flags.make
 CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o: ../src/benchmarks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/src/benchmarks.c
 
 CMakeFiles/matrix_threaded.dir/src/benchmarks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/matrix_threaded.dir/src/benchmarks.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.c > CMakeFiles/matrix_threaded.dir/src/benchmarks.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/UDESC/OPRP/matrix_threaded/src/benchmarks.c > CMakeFiles/matrix_threaded.dir/src/benchmarks.c.i
 
 CMakeFiles/matrix_threaded.dir/src/benchmarks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/matrix_threaded.dir/src/benchmarks.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/Personal/Udesc/OPRP/matrix_threaded/src/benchmarks.c -o CMakeFiles/matrix_threaded.dir/src/benchmarks.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/UDESC/OPRP/matrix_threaded/src/benchmarks.c -o CMakeFiles/matrix_threaded.dir/src/benchmarks.c.s
 
 CMakeFiles/matrix_threaded.dir/src/main.c.o: CMakeFiles/matrix_threaded.dir/flags.make
 CMakeFiles/matrix_threaded.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/matrix_threaded.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/main.c.o   -c /home/d/Personal/Udesc/OPRP/matrix_threaded/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/matrix_threaded.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/matrix_threaded.dir/src/main.c.o   -c /home/d/UDESC/OPRP/matrix_threaded/src/main.c
 
 CMakeFiles/matrix_threaded.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/matrix_threaded.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/Personal/Udesc/OPRP/matrix_threaded/src/main.c > CMakeFiles/matrix_threaded.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/d/UDESC/OPRP/matrix_threaded/src/main.c > CMakeFiles/matrix_threaded.dir/src/main.c.i
 
 CMakeFiles/matrix_threaded.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/matrix_threaded.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/Personal/Udesc/OPRP/matrix_threaded/src/main.c -o CMakeFiles/matrix_threaded.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/d/UDESC/OPRP/matrix_threaded/src/main.c -o CMakeFiles/matrix_threaded.dir/src/main.c.s
 
 # Object files for target matrix_threaded
 matrix_threaded_OBJECTS = \
@@ -110,7 +110,7 @@ matrix_threaded: CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o
 matrix_threaded: CMakeFiles/matrix_threaded.dir/src/main.c.o
 matrix_threaded: CMakeFiles/matrix_threaded.dir/build.make
 matrix_threaded: CMakeFiles/matrix_threaded.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable matrix_threaded"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable matrix_threaded"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrix_threaded.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/matrix_threaded.dir/clean:
 .PHONY : CMakeFiles/matrix_threaded.dir/clean
 
 CMakeFiles/matrix_threaded.dir/depend:
-	cd /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/d/Personal/Udesc/OPRP/matrix_threaded /home/d/Personal/Udesc/OPRP/matrix_threaded /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug /home/d/Personal/Udesc/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/d/UDESC/OPRP/matrix_threaded /home/d/UDESC/OPRP/matrix_threaded /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug /home/d/UDESC/OPRP/matrix_threaded/cmake-build-debug/CMakeFiles/matrix_threaded.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/matrix_threaded.dir/depend
 
