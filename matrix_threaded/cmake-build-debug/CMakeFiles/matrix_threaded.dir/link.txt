@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/matrix_threaded.dir/src/matrix.c.o CMakeFiles/matrix_threaded.dir/src/benchmarks.c.o CMakeFiles/matrix_threaded.dir/src/main.c.o  -o matrix_threaded -lm -pthread 

@@ -6,7 +6,12 @@
 
 matrix_t *matrix_create(int rows, int cols)
 {
-    matrix_t *matrix = (matrix_t*)malloc(sizeof(matrix_t));
+    matrix_t *matrix;
+    if (!(matrix = (matrix_t*) malloc(sizeof(matrix_t)))) {
+        perror("Failed to allocate memory!\n");
+        exit(EXIT_FAILURE);
+    }
+
     matrix->rows = rows;
     matrix->cols = cols;
 
@@ -17,7 +22,7 @@ matrix_t *matrix_create(int rows, int cols)
     int i;
 
     for (i = 0; i < rows; i++) {
-      matrix->data[i] = (i*rows + temp);
+      matrix->data[i] = (temp + (i * rows));
     }
 
     return matrix;
@@ -25,44 +30,42 @@ matrix_t *matrix_create(int rows, int cols)
 
 void matrix_destroy(matrix_t *matrix)
 {
-    free(matrix->data[0]);
+    free(*matrix->data);
 
     int i;
     for (i = 0; i < matrix->rows; i++) {
       matrix->data[i] = NULL;
     }
 
-    free(matrix->data);
     matrix->data = NULL;
 
     free(matrix);
-    matrix = NULL;
 }
 
-void matrix_randfill(matrix_t *m)
+void matrix_randfill(matrix_t *matrix)
 {
    int i, j;
-   for (i = 0; i < m->rows; i++) {
-      for (j = 0; j < m->cols; j++) {
-         m->data[i][j] = random();
+   for (i = 0; i < matrix->rows; i++) {
+      for (j = 0; j < matrix->cols; j++) {
+          matrix->data[i][j] = random();
       }
    }
 }
 
-void matrix_fill(matrix_t *m, double val)
+void matrix_fill(matrix_t *matrix, double val)
 {
    int i, j;
-   for (i = 0; i < m->rows; i++) {
-      for (j = 0; j < m->cols; j++) {
-         m->data[i][j] = val;
+   for (i = 0; i < matrix->rows; i++) {
+      for (j = 0; j < matrix->cols; j++) {
+          matrix->data[i][j] = val;
       }
    }
 }
 
-matrix_t *matrix_multiply(matrix_t *A, matrix_t *B)
+matrix_t *matrix_multiply(matrix_t *matrixA, matrix_t *matrixB)
 {
-    int rows_final = A->rows;
-    int cols_final = B->cols;
+    int rows_final = matrixA->rows;
+    int cols_final = matrixB->cols;
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
     matrix_fill(resultado, 0);
@@ -71,8 +74,8 @@ matrix_t *matrix_multiply(matrix_t *A, matrix_t *B)
 
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
-            for (k = 0; k < B->rows; k++) {
-                resultado->data[i][j] += A->data[i][k] * B->data[j][k];
+            for (k = 0; k < matrixB->rows; k++) {
+                resultado->data[i][j] += matrixA->data[i][k] * matrixB->data[j][k];
             }
         }
     }
@@ -80,23 +83,23 @@ matrix_t *matrix_multiply(matrix_t *A, matrix_t *B)
     return resultado;
 }
 
-void matrix_print(matrix_t *m)
+void matrix_print(matrix_t *matrix)
 {
 
    int i, j;
-   for (i = 0; i < m->rows; i++) {
-      for (j = 0; j < m->cols; j++) {
-         printf("%.17f ", m->data[i][j]);
+   for (i = 0; i < matrix->rows; i++) {
+      for (j = 0; j < matrix->cols; j++) {
+         printf("%.17f ", matrix->data[i][j]);
       }
       printf("\n");
    }
    fflush(stdout);
 }
 
-matrix_t *matrix_sum(matrix_t *A, matrix_t *B)
+matrix_t *matrix_sum(matrix_t *matrixA, matrix_t *matrixB)
 {
-    int rows_final = A->rows;
-    int cols_final = A->cols;
+    int rows_final = matrixA->rows;
+    int cols_final = matrixA->cols;
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
     matrix_fill(resultado, 0);
@@ -105,20 +108,20 @@ matrix_t *matrix_sum(matrix_t *A, matrix_t *B)
 
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
-            resultado->data[i][j] += A->data[i][j] + B->data[i][j];
+            resultado->data[i][j] += matrixA->data[i][j] + matrixB->data[i][j];
         }
     }
 
     return resultado;
 }
 
-matrix_t *matrix_sort(matrix_t *A) {
-    int rows = A->rows;
-    int cols = A->cols;
+matrix_t *matrix_sort(matrix_t *matrixA) {
+    int rows = matrixA->rows;
+    int cols = matrixA->cols;
 
     matrix_t *resultado = matrix_create(rows, cols);
 
-    memcpy(resultado->data[0], A->data[0], sizeof(double) * rows * cols);
+    memcpy(resultado->data[0], matrixA->data[0], sizeof(double) * rows * cols);
 
     quicksort(resultado->data[0], 0, rows * cols - 1);
 

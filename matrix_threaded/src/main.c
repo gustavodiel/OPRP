@@ -7,8 +7,8 @@
 
 int main(int argc, char **argv)
 {
-    if (argc != 4) {
-        printf("Uso: %s <rows> <cols> <number of times>\n", argv[0]);
+    if (argc != 5) {
+        printf("Uso: %s <rows> <cols> <number of times> <number of threads>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
 
@@ -17,11 +17,12 @@ int main(int argc, char **argv)
     int nrows = atoi(argv[1]);
     int ncols = atoi(argv[2]);
     int nums = atoi(argv[3]);
+    int threads = atoi(argv[4]);
 
 
-    sum_benchmark(nrows, ncols, nums);
-    multiply_benchmark(nrows, ncols, nums);
-    sort_benchmark(nrows, ncols, nums);
+    sum_benchmark(nrows, ncols, nums, threads);
+//    multiply_benchmark(nrows, ncols, nums threads);
+//    sort_benchmark(nrows, ncols, nums threads);
 
     return EXIT_SUCCESS;
 }

@@ -18,21 +18,21 @@ typedef struct {
  */
 
 
-matrix_t *matrix_create(int rows, int cols);
+matrix_t *matrix_create(int, int);
 
-void matrix_destroy(matrix_t *m);
+void matrix_destroy(matrix_t *);
 
-void matrix_randfill(matrix_t *m);
+void matrix_randfill(matrix_t *);
 
-void matrix_fill(matrix_t *m, double val);
+void matrix_fill(matrix_t *, double);
 
-matrix_t *matrix_multiply(matrix_t *A, matrix_t *B);
+matrix_t *matrix_multiply(matrix_t *, matrix_t *);
 
-matrix_t *matrix_sum(matrix_t *A, matrix_t *B);
+matrix_t *matrix_sum(matrix_t *, matrix_t *);
 
-matrix_t *matrix_sort(matrix_t *A);
+matrix_t *matrix_sort(matrix_t *);
 
-void matrix_print(matrix_t *m);
+void matrix_print(matrix_t *);
 
 void quicksort(double*, int, int);
 void swap(double*, double*);
