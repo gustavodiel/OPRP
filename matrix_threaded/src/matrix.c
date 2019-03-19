@@ -2,16 +2,12 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+
 #include "../include/matrix.h"
 
 matrix_t *matrix_create(int rows, int cols)
 {
-    matrix_t *matrix;
-    if (!(matrix = (matrix_t*) malloc(sizeof(matrix_t)))) {
-        perror("Failed to allocate memory!\n");
-        exit(EXIT_FAILURE);
-    }
-
+    matrix_t *matrix = (matrix_t*)malloc(sizeof(matrix_t));
     matrix->rows = rows;
     matrix->cols = cols;
 
@@ -22,7 +18,7 @@ matrix_t *matrix_create(int rows, int cols)
     int i;
 
     for (i = 0; i < rows; i++) {
-      matrix->data[i] = (temp + (i * rows));
+      matrix->data[i] = (i*rows + temp);
     }
 
     return matrix;
@@ -30,42 +26,46 @@ matrix_t *matrix_create(int rows, int cols)
 
 void matrix_destroy(matrix_t *matrix)
 {
-    free(*matrix->data);
+    free(matrix->data[0]);
 
     int i;
     for (i = 0; i < matrix->rows; i++) {
       matrix->data[i] = NULL;
     }
 
+    free(matrix->data);
     matrix->data = NULL;
 
     free(matrix);
+    matrix = NULL;
+
+    return;
 }
 
-void matrix_randfill(matrix_t *matrix)
+void matrix_randfill(matrix_t *m)
 {
    int i, j;
-   for (i = 0; i < matrix->rows; i++) {
-      for (j = 0; j < matrix->cols; j++) {
-          matrix->data[i][j] = random();
+   for (i = 0; i < m->rows; i++) {
+      for (j = 0; j < m->cols; j++) {
+         m->data[i][j] = random();
       }
    }
 }
 
-void matrix_fill(matrix_t *matrix, double val)
+void matrix_fill(matrix_t *m, double val)
 {
    int i, j;
-   for (i = 0; i < matrix->rows; i++) {
-      for (j = 0; j < matrix->cols; j++) {
-          matrix->data[i][j] = val;
+   for (i = 0; i < m->rows; i++) {
+      for (j = 0; j < m->cols; j++) {
+         m->data[i][j] = val;
       }
    }
 }
 
-matrix_t *matrix_multiply(matrix_t *matrixA, matrix_t *matrixB)
+matrix_t *matrix_multiply(matrix_t *A, matrix_t *B)
 {
-    int rows_final = matrixA->rows;
-    int cols_final = matrixB->cols;
+    int rows_final = A->rows;
+    int cols_final = B->cols;
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
     matrix_fill(resultado, 0);
@@ -74,8 +74,8 @@ matrix_t *matrix_multiply(matrix_t *matrixA, matrix_t *matrixB)
 
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
-            for (k = 0; k < matrixB->rows; k++) {
-                resultado->data[i][j] += matrixA->data[i][k] * matrixB->data[j][k];
+            for (k = 0; k < B->rows; k++) {
+                resultado->data[i][j] += A->data[i][k] * B->data[j][k];
             }
         }
     }
@@ -83,73 +83,92 @@ matrix_t *matrix_multiply(matrix_t *matrixA, matrix_t *matrixB)
     return resultado;
 }
 
-void matrix_print(matrix_t *matrix)
+void matrix_print(matrix_t *m)
 {
 
    int i, j;
-   for (i = 0; i < matrix->rows; i++) {
-      for (j = 0; j < matrix->cols; j++) {
-         printf("%.17f ", matrix->data[i][j]);
+   for (i = 0; i < m->rows; i++) {
+      for (j = 0; j < m->cols; j++) {
+         printf("%.17f ", m->data[i][j]);
       }
       printf("\n");
    }
    fflush(stdout);
 }
 
-matrix_t *matrix_sum(matrix_t *matrixA, matrix_t *matrixB)
+matrix_t *matrix_sum(matrix_t *A, matrix_t *B)
 {
-    int rows_final = max(matrixA->rows, matrixB->rows);
-    int cols_final = max(matrixA->cols, matrixB->cols);
+    int rows_final = max(A->rows, B->rows);
+    int cols_final = max(A->cols, B->cols);
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
-    matrix_fill(resultado, 0);
 
     int i, j;
 
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
-            resultado->data[i][j] += matrixA->data[i][j] + matrixB->data[i][j];
+            resultado->data[i][j] = A->data[i][j] + B->data[i][j];
         }
     }
 
     return resultado;
 }
 
-matrix_t *matrix_sort(matrix_t *matrixA) {
-    int rows = matrixA->rows;
-    int cols = matrixA->cols;
+matrix_t *matrix_sort(matrix_t *A)
+{
+    int rows_final = A->rows;
+    int cols_final = A->cols;
 
-    matrix_t *resultado = matrix_create(rows, cols);
+    matrix_t *resultado = matrix_create(rows_final, cols_final);
 
-    memcpy(resultado->data[0], matrixA->data[0], sizeof(double) * rows * cols);
+    memcpy(resultado->data[0], A->data[0], cols_final * rows_final * sizeof(double));
 
-    quicksort(resultado->data[0], 0, rows * cols - 1);
+    printf("We have:\n");
+    int i;
+    for (i = 0; i < rows_final * cols_final; i++) {
+        printf("%lf\n", A->data[0][i]);
+    }
+
+    printf("\nWe got:\n");
+
+    quick_sort(A->data[0], 0, rows_final * cols_final - 1);
+
+    for (i = 0; i < rows_final * cols_final; i++) {
+        printf("%lf\n", A->data[0][i]);
+    }
 
     return resultado;
 }
 
-int partition(double *data, int low, int high) {
-    double pivot = data[high];
+int partition(double *vector, int low, int high)
+{
+    double pivot = vector[high];
     int i = (low - 1);
 
-    for (int j = low; j <= high- 1; j++) {
-        if (data[j] <= pivot) {
+    for (int j = low; j <= high - 1; j++)
+    {
+        if (vector[j] <= pivot)
+        {
             i++;
-            swap(&data[i], &data[j]);
+
+            swap(&vector[i], &vector[j]);
         }
     }
-    swap(&data[i + 1], &data[high]);
+    swap(&vector[i + 1], &vector[high]);
     return (i + 1);
 }
 
-void quicksort(double *data, int low, int high) {
-    if (low < high) {
-        int pi = partition(data, low, high);
+void quick_sort(double *vector, int low, int high)
+{
+    if (low < high)
+    {
+        int part = partition(vector, low, high);
 
-        quicksort(data, low, pi - 1);
-        quicksort(data, pi + 1, high);
+        quick_sort(vector, low, part - 1);
+        quick_sort(vector, part + 1, high);
     }
 }
+
 void swap(double *a, double *b) {
     double aux = *a;
     *a = *b;
