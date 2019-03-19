@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include "matrix.h"
+
+#include "../include/matrix.h"
 
 matrix_t *matrix_create(int rows, int cols)
 {
@@ -97,17 +98,16 @@ void matrix_print(matrix_t *m)
 
 matrix_t *matrix_sum(matrix_t *A, matrix_t *B)
 {
-    int rows_final = A->rows;
-    int cols_final = A->cols;
+    int rows_final = max(A->rows, B->rows);
+    int cols_final = max(A->cols, B->cols);
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
-    matrix_fill(resultado, 0);
 
     int i, j;
 
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
-            resultado->data[i][j] += A->data[i][j] + B->data[i][j];
+            resultado->data[i][j] = A->data[i][j] + B->data[i][j];
         }
     }
 

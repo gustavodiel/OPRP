@@ -98,8 +98,8 @@ void matrix_print(matrix_t *matrix)
 
 matrix_t *matrix_sum(matrix_t *matrixA, matrix_t *matrixB)
 {
-    int rows_final = matrixA->rows;
-    int cols_final = matrixA->cols;
+    int rows_final = max(matrixA->rows, matrixB->rows);
+    int cols_final = max(matrixA->cols, matrixB->cols);
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
     matrix_fill(resultado, 0);
