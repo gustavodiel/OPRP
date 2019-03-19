@@ -5,6 +5,7 @@
 #include "../include/threaded_matrix.h"
 
 #include <pthread.h>
+#include <stdio.h>
 
 #include "../include/matrix.h"
 
