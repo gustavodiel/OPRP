@@ -20,9 +20,9 @@ int main(int argc, char **argv)
     int threads = atoi(argv[4]);
 
 
-    sum_benchmark(nrows, ncols, nums, threads);
-//    multiply_benchmark(nrows, ncols, nums threads);
-//    sort_benchmark(nrows, ncols, nums threads);
+    // sum_benchmark(nrows, ncols, nums, threads);
+    // multiply_benchmark(nrows, ncols, nums, threads);
+    sort_benchmark(nrows, ncols, nums, threads);
 
     return EXIT_SUCCESS;
 }

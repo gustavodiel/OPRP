@@ -108,7 +108,7 @@ matrix_t *matrix_sort(matrix_t *A) {
 
     memcpy(resultado->data[0], A->data[0], cols_final * rows_final * sizeof(double));
 
-    quick_sort(A->data[0], 0, rows_final * cols_final - 1);
+    quick_sort(resultado->data[0], 0, rows_final * cols_final - 1);
 
     return resultado;
 }
