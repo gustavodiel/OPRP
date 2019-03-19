@@ -10,7 +10,7 @@ This repository is where I'll be updating my parallel computing class code.
 ### CMake
 This will apply for those projects with a `CMakeLists.txt` file:
 ```sh
-cd proejct_folder
+cd project_folder
 mkdir build
 cd build
 cmake ../
