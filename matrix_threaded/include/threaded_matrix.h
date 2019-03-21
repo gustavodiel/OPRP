@@ -24,9 +24,15 @@ typedef struct {
 } mult_package;
 
 typedef struct {
-    double **result;
-    int start, end;
+    double *result;
+    int end;
 } sort_package;
+
+struct bucket 
+{
+    int count;
+    double* value;
+};
 
 matrix_t* threaded_matrix_sum(matrix_t*, matrix_t*, int);
 void* sum_thread_job(void*);
@@ -38,7 +44,7 @@ void* mult_thread_job(void*);
 
 matrix_t* threaded_matrix_sort(matrix_t*, int);
 void* sort_thread_job(void*);
-void quick_sort_threaded(double *vector, int low, int high);
+void start_bucket_sort(matrix_t *matrix,int thread_count);
 
 
 #endif //MATRIX_THREADED_PROJECT_THREADED_MATRIX_H

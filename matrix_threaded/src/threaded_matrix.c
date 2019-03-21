@@ -134,15 +134,31 @@ void* mult_thread_job(void* raw_data) {
 matrix_t* threaded_matrix_sort(matrix_t* matrix, int thread_count) {
     int rows_final = matrix->rows;
     int cols_final = matrix->cols;
-    int total_items = rows_final * cols_final - 1;
-    int elements_per_thread = total_items / thread_count;
-
-    sort_package* sort_content = NULL;
-    pthread_t* threads = NULL;
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
 
     memcpy(resultado->data[0], matrix->data[0], cols_final * rows_final * sizeof(double));
+
+
+
+    start_bucket_sort(resultado, thread_count);
+
+
+
+    return resultado;
+}
+
+void start_bucket_sort(matrix_t *matrix,int thread_count) {
+    struct bucket buckets[thread_count];
+
+    int rows_final = matrix->rows;
+    int cols_final = matrix->cols;
+    int total_items = rows_final * cols_final;
+
+    sort_package* sort_content = NULL;
+    pthread_t* threads = NULL;
+
+    double* array = matrix->data[0];
 
     if (!(sort_content = (sort_package*) malloc(sizeof(sort_package) * thread_count))) {
         perror("Erro ao alocar memória para o conteúdo!");
@@ -154,41 +170,44 @@ matrix_t* threaded_matrix_sort(matrix_t* matrix, int thread_count) {
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < thread_count; ++i) {
-        sort_content[i].start = i * elements_per_thread;
-        sort_content[i].end = (i + 1) * elements_per_thread;
-        sort_content[i].result = resultado->data;
+    int i, j, k;
+    for (i = 0; i < thread_count; i++) {
+        buckets[i].count = 0;
+        buckets[i].value = (double*)malloc(sizeof(double) * total_items);
+    }
+    
+    for (i = 0; i < total_items; i++) {
+        int index = array[i] * thread_count;
+        buckets[index].value[buckets[index].count++] = array[i];
+    }
 
-        // Check for final
-        if (i == thread_count - 1) {
-            sort_content[i].end = total_items;
-        }
+    for (k = 0, i = 0; i < thread_count; i++) {
+        // qsort(buckets[i].value, buckets[i].count, sizeof(int), );
+        sort_content[i].result = buckets[i].value;
+        sort_content[i].end = buckets[i].count;
         
         pthread_create(&threads[i], NULL, sort_thread_job, (void *) (sort_content + i));
     }
 
-    for (int i = 0; i < thread_count; ++i) {
+    for (k = 0, i = 0; i < thread_count; i++) {
         pthread_join(threads[i], NULL);
+
+        for (j = 0; j < buckets[i].count; j++) {
+            array[k + j] = buckets[i].value[j];
+        }
+
+        k += buckets[i].count;
+        free(buckets[i].value);
     }
-
-    // Ainda não funciona :nervoso:
-    // Falta executar o último loop. pois cada parte está sortada, porém nao como um todo
-    // Descomentar essa linha iria arrumar, porém fica lento :eyes:
-    // quick_sort(resultado->data[0], 0, total_items);
-
-    // Ideia: fazer bucket sort, dai funciona com n threads
-
     free(sort_content);
     free(threads);
-
-    return resultado;
 }
 
 
 void* sort_thread_job(void* raw_data) {
     sort_package* data = (sort_package*) raw_data;
 
-    quick_sort(data->result[0], data->start, data->end);
+    quick_sort(data->result, 0, data->end - 1);
 
     return NULL;
 }
