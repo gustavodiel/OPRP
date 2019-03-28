@@ -20,7 +20,7 @@ typedef struct {
     double **first;
     double **second;
     double **result;
-    int first_row, last_row, total_cols, num_cols_b;
+    int first_row, last_row, total_cols;
 } mult_package;
 
 typedef struct {
@@ -28,7 +28,7 @@ typedef struct {
     int end;
 } sort_package;
 
-struct bucket 
+struct bucket
 {
     int count;
     double* value;

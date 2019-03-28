@@ -65,11 +65,11 @@ void multiply_benchmark(int rows, int cols, int total_executions, int total_thre
     matrix_t* matrixB = matrix_create(rows, cols);
     matrix_t* result;
 
+    matrix_fill(matrixA, 2);
+    matrix_fill(matrixB, 4);
+
     // matrix_randfill(matrixA);
     // matrix_randfill(matrixB);
-
-    matrix_randfill(matrixA);
-    matrix_randfill(matrixB);
 
     double media[total_executions];
 

@@ -71,9 +71,8 @@ matrix_t* threaded_matrix_mult(matrix_t* matrixA, matrix_t* matrixB, int thread_
     mult_package* mult_content = NULL;
     pthread_t* threads = NULL;
 
-    int total_rows = matrixA->rows;
     int total_elements_mat_b = matrixB->cols;
-    int rows_per_job = total_rows / thread_count;
+    int rows_per_job = matrixA->rows / thread_count;
 
     int i;
 
@@ -87,7 +86,7 @@ matrix_t* threaded_matrix_mult(matrix_t* matrixA, matrix_t* matrixB, int thread_
         exit(EXIT_FAILURE);
     }
 
-    matrix_t *resultado = matrix_create(matrixA->rows, matrixA->cols);
+    matrix_t *resultado = matrix_create(matrixA->rows, matrixB->cols);
 
     for (i = 0; i < thread_count; ++i) {
         mult_content[i].first = matrixA->data;
@@ -96,11 +95,10 @@ matrix_t* threaded_matrix_mult(matrix_t* matrixA, matrix_t* matrixB, int thread_
         mult_content[i].last_row = (i + 1) * rows_per_job;
         mult_content[i].result = resultado->data;
         mult_content[i].total_cols = resultado->cols;
-        mult_content[i].num_cols_b = matrixB->cols;
 
         // Check for final
         if (i == thread_count - 1) {
-            mult_content[i].last_row = total_rows;
+            mult_content[i].last_row = matrixA->rows;
         }
 
         pthread_create(&threads[i], NULL, mult_thread_job, (void *) (mult_content + i));
@@ -120,9 +118,10 @@ void* mult_thread_job(void* raw_data) {
     mult_package* data = (mult_package*) raw_data;
 
     for (int i = data->first_row; i < data->last_row; i++) { // Percorre linha da A
-        for (int j = 0; j < data->num_cols_b; j++) {
+        for (int j = 0; j < data->total_cols; j++) {
+            data->result[i][j] = 0;
             for (int k = 0; k < data->total_cols; ++k) { // Percorre matrix B
-                data->result[i][k] += data->first[i][j] * data->second[j][k];
+                data->result[i][j] += data->first[i][k] * data->second[k][j];
             }
         }
     }

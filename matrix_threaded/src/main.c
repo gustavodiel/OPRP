@@ -21,8 +21,8 @@ int main(int argc, char **argv)
 
 
     // sum_benchmark(nrows, ncols, nums, threads);
-    // multiply_benchmark(nrows, ncols, nums, threads);
-    sort_benchmark(nrows, ncols, nums, threads);
+    multiply_benchmark(nrows, ncols, nums, threads);
+    // sort_benchmark(nrows, ncols, nums, threads);
 
     return EXIT_SUCCESS;
 }

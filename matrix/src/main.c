@@ -20,9 +20,9 @@ int main(int argc, char **argv)
     ncols = atoi(argv[2]);
     exec = atoi(argv[3]);
 
-    sum_benchmark(nrows, ncols, exec);
+//    sum_benchmark(nrows, ncols, exec);
     multiply_benchmark(nrows, ncols , exec);
-    sort_benchmark(nrows, ncols, exec);
+//    sort_benchmark(nrows, ncols, exec);
 
     return EXIT_SUCCESS;
 }
