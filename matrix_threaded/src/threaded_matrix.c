@@ -120,9 +120,9 @@ void* mult_thread_job(void* raw_data) {
     mult_package* data = (mult_package*) raw_data;
 
     for (int i = data->first_row; i < data->last_row; i++) { // Percorre linha da A
-        for (int j = 0; j < data->total_cols; ++j) { // Percorre matrix B
-            for (int k = 0; k < data->num_cols_b; k++) {
-                data->result[i][j] += data->first[i][j] * data->second[j][k];
+        for (int j = 0; j < data->num_cols_b; j++) {
+            for (int k = 0; k < data->total_cols; ++k) { // Percorre matrix B
+                data->result[i][k] += data->first[i][j] * data->second[j][k];
             }
         }
     }
@@ -175,7 +175,7 @@ void start_bucket_sort(matrix_t *matrix,int thread_count) {
         buckets[i].count = 0;
         buckets[i].value = (double*)malloc(sizeof(double) * total_items);
     }
-    
+
     for (i = 0; i < total_items; i++) {
         int index = array[i] * thread_count;
         buckets[index].value[buckets[index].count++] = array[i];
@@ -185,7 +185,7 @@ void start_bucket_sort(matrix_t *matrix,int thread_count) {
         // qsort(buckets[i].value, buckets[i].count, sizeof(int), );
         sort_content[i].result = buckets[i].value;
         sort_content[i].end = buckets[i].count;
-        
+
         pthread_create(&threads[i], NULL, sort_thread_job, (void *) (sort_content + i));
     }
 
@@ -211,4 +211,3 @@ void* sort_thread_job(void* raw_data) {
 
     return NULL;
 }
-
