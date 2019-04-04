@@ -3,6 +3,8 @@
 #include <assert.h>
 #include <string.h>
 
+#include <omp.h>
+
 #include "../include/matrix.h"
 
 matrix_t *matrix_create(int rows, int cols) {
@@ -62,6 +64,7 @@ matrix_t *matrix_multiply(matrix_t *A, matrix_t *B) {
 
     int i, j, k;
 
+#pragma omp parallel for private(i, j, k) default(shared)
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
             for (k = 0; k < B->rows; k++) {
@@ -89,10 +92,14 @@ matrix_t *matrix_sum(matrix_t *A, matrix_t *B) {
     int rows_final = max(A->rows, B->rows);
     int cols_final = max(A->cols, B->cols);
 
+    int i, j;
+
     matrix_t *resultado = matrix_create(rows_final, cols_final);
 
-    for (int i = 0; i < rows_final; i++) {
-        for (int j = 0; j < cols_final; j++) {
+#pragma omp parallel for private(i, j) shared(resultado, A, B)
+    for (i = 0; i < rows_final; i++) {
+#pragma omp parallel for private(i, j) shared(resultado, A, B)
+        for (j = 0; j < cols_final; j++) {
             resultado->data[i][j] = A->data[i][j] + B->data[i][j];
         }
     }
@@ -116,8 +123,10 @@ matrix_t *matrix_sort(matrix_t *A) {
 int partition(double *vector, int low, int high) {
     double pivot = vector[high];
     int i = (low - 1);
+    int j;
 
-    for (int j = low; j <= high - 1; j++)
+#pragma omp parallel for default(shared) private(j)
+    for (j = low; j <= high - 1; j++)
     {
         if (vector[j] <= pivot)
         {
@@ -131,12 +140,17 @@ int partition(double *vector, int low, int high) {
 }
 
 void quick_sort(double *vector, int low, int high) {
-    if (low < high)
-    {
+    if (low < high) {
         int part = partition(vector, low, high);
 
-        quick_sort(vector, low, part - 1);
-        quick_sort(vector, part + 1, high);
+#pragma omp parallel default(shared)
+        {
+            quick_sort(vector, low, part - 1);
+        }
+#pragma omp parallel default(shared)
+        {
+            quick_sort(vector, part + 1, high);
+        }
     }
 }
 
