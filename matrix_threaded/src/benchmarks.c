@@ -45,7 +45,7 @@ void sum_benchmark(const int rows, const int cols, const int total_executions, i
 
         media[repeat] = took;
 
-        printf("\x1B[34m[\x1B[31mSUM\x1B[34m ] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
+        // printf("\x1B[34m[\x1B[31mSUM\x1B[34m ] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
 
         matrix_destroy(result);
     }
@@ -88,7 +88,7 @@ void multiply_benchmark(int rows, int cols, int total_executions, int total_thre
 
         media[repeat] = took;
 
-        printf("\x1B[34m[\x1B[33mMULT\x1B[34m] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
+        // printf("\x1B[34m[\x1B[33mMULT\x1B[34m] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
 
         matrix_destroy(result);
     }
@@ -126,7 +126,7 @@ void sort_benchmark(int rows, int cols, int total_executions, int total_threads)
 
         media[repeat] = took;
 
-        printf("\x1B[34m[\x1B[36mSORT\x1B[34m] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
+        // printf("\x1B[34m[\x1B[36mSORT\x1B[34m] \x1B[37mExecution \x1B[36m%4d \x1B[37mout of \x1B[34m%d \x1B[37mfor \x1B[33m%d x %d \x1B[37mtook \x1B[35m%lf \x1B[37m\n", total_executions - repeat, total_executions, rows, cols, took);
 
         int last = 0;
         for (int i = 1; i < result->cols * result->rows; ++i) {
