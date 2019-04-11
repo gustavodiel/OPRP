@@ -10,9 +10,9 @@
 #include <pthread.h>
 #include <sys/time.h>
 
-void sum_benchmark(int, int, int);
-void multiply_benchmark(int, int , int);
-void sort_benchmark(int, int, int);
+void sum_benchmark(int, int, int, int);
+void multiply_benchmark(int, int , int, int);
+void sort_benchmark(int, int, int, int);
 
 double deviation(int, double*);
 double average(int, double*);

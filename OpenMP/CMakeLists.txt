@@ -2,6 +2,14 @@ cmake_minimum_required(VERSION 3.1)
 
 project(open_mp_project)
 
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "")
+
 find_package(OpenMP REQUIRED)
 
 add_executable(open_mp src/matrix.c src/benchmarks.c src/main.c)

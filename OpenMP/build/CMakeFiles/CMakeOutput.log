@@ -1,4 +1,4 @@
-The system is: Linux - 4.15.0-47-generic - x86_64
+The system is: Linux - 5.0.2-arch1-1-ARCH - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/3.14.0/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,152 +23,213 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/3.14.0/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_73aad/fast"
-/usr/bin/make -f CMakeFiles/cmTC_73aad.dir/build.make CMakeFiles/cmTC_73aad.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_73aad.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_73aad.dir/testCCompiler.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_73aad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73aad.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_73aad.dir/testCCompiler.c.o  -o cmTC_73aad 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_8b357/fast 
+/usr/bin/make -f CMakeFiles/cmTC_8b357.dir/build.make CMakeFiles/cmTC_8b357.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b357.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8b357.dir/testCCompiler.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_8b357
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b357.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8b357.dir/testCCompiler.c.o  -o cmTC_8b357 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fc435/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fc435.dir/build.make CMakeFiles/cmTC_fc435.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_fc435
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc435.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o  -o cmTC_fc435 
+Run Build Command(s):/usr/bin/make cmTC_c1d87/fast 
+/usr/bin/make -f CMakeFiles/cmTC_c1d87.dir/build.make CMakeFiles/cmTC_c1d87.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.14/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fc435' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpSpjhg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fc435 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fc435' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+gcc version 8.2.1 20181127 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v /usr/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc2OGudY.s
+GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
+
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
+
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0c14e25c3256cb739a3fd5c231a3c41d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o /tmp/cc2OGudY.s
+GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_c1d87
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1d87.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o  -o cmTC_c1d87 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
+Thread model: posix
+gcc version 8.2.1 20181127 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c1d87' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRXkA7W.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1d87 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c1d87' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fc435/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_fc435.dir/build.make CMakeFiles/cmTC_fc435.dir/build]
-  ignore line: [make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_fc435]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc435.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o  -o cmTC_fc435 ]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_c1d87/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c1d87.dir/build.make CMakeFiles/cmTC_c1d87.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fc435' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpSpjhg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fc435 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v /usr/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc2OGudY.s]
+  ignore line: [GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0c14e25c3256cb739a3fd5c231a3c41d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o /tmp/cc2OGudY.s]
+  ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_c1d87]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1d87.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o  -o cmTC_c1d87 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c1d87' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRXkA7W.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1d87 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccpSpjhg.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccRXkA7W.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fc435] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [cmTC_c1d87] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_fc435.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+    arg [CMakeFiles/cmTC_c1d87.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
+    arg [--no-as-needed] ==> ignore
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_81a92/fast"
-/usr/bin/make -f CMakeFiles/cmTC_81a92.dir/build.make CMakeFiles/cmTC_81a92.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_81a92.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_81a92.dir/feature_tests.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_81a92
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a92.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_81a92.dir/feature_tests.c.o  -o cmTC_81a92 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f7b77/fast 
+/usr/bin/make -f CMakeFiles/cmTC_f7b77.dir/build.make CMakeFiles/cmTC_f7b77.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7b77.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_f7b77.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f7b77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7b77.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f7b77.dir/feature_tests.c.o  -o cmTC_f7b77 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -178,17 +239,17 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_14cf3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_14cf3.dir/build.make CMakeFiles/cmTC_14cf3.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_14cf3.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_14cf3.dir/feature_tests.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_14cf3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14cf3.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_14cf3.dir/feature_tests.c.o  -o cmTC_14cf3 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_48ace/fast 
+/usr/bin/make -f CMakeFiles/cmTC_48ace.dir/build.make CMakeFiles/cmTC_48ace.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48ace.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_48ace.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_48ace
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48ace.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_48ace.dir/feature_tests.c.o  -o cmTC_48ace 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -198,17 +259,17 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0548a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0548a.dir/build.make CMakeFiles/cmTC_0548a.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0548a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_0548a.dir/feature_tests.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0548a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0548a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0548a.dir/feature_tests.c.o  -o cmTC_0548a 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_e617e/fast 
+/usr/bin/make -f CMakeFiles/cmTC_e617e.dir/build.make CMakeFiles/cmTC_e617e.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e617e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_e617e.dir/feature_tests.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e617e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e617e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e617e.dir/feature_tests.c.o  -o cmTC_e617e 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -216,109 +277,184 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_85a9e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_85a9e.dir/build.make CMakeFiles/cmTC_85a9e.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_85a9e.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_85a9e.dir/testCXXCompiler.cxx.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_85a9e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85a9e.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_85a9e.dir/testCXXCompiler.cxx.o  -o cmTC_85a9e 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_72a31/fast 
+/usr/bin/make -f CMakeFiles/cmTC_72a31.dir/build.make CMakeFiles/cmTC_72a31.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_72a31.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_72a31.dir/testCXXCompiler.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_72a31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a31.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_72a31.dir/testCXXCompiler.cxx.o  -o cmTC_72a31 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f0865/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f0865.dir/build.make CMakeFiles/cmTC_f0865.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f0865
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0865.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f0865 
+Run Build Command(s):/usr/bin/make cmTC_81a4a/fast 
+/usr/bin/make -f CMakeFiles/cmTC_81a4a.dir/build.make CMakeFiles/cmTC_81a4a.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f0865' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWEfZwp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0865 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f0865' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+gcc version 8.2.1 20181127 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccdrWdSc.s
+GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
+
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
+
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c228073cd86637479fc341ff509ca7e7
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdrWdSc.s
+GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_81a4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a4a.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_81a4a 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
+Thread model: posix
+gcc version 8.2.1 20181127 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_81a4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM1ctmg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_81a4a /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_81a4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1;/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu;/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f0865/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f0865.dir/build.make CMakeFiles/cmTC_f0865.dir/build]
-  ignore line: [make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f0865]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0865.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f0865 ]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_81a4a/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_81a4a.dir/build.make CMakeFiles/cmTC_81a4a.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f0865' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWEfZwp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0865 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccdrWdSc.s]
+  ignore line: [GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c228073cd86637479fc341ff509ca7e7]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdrWdSc.s]
+  ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_81a4a]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a4a.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_81a4a ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_81a4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM1ctmg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_81a4a /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccWEfZwp.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccM1ctmg.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f0865] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [cmTC_81a4a] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_f0865.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+    arg [CMakeFiles/cmTC_81a4a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -326,35 +462,105 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
-Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Detecting CXX [-std=c++2a] compiler features compiled with the following output:
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_de699/fast"
-/usr/bin/make -f CMakeFiles/cmTC_de699.dir/build.make CMakeFiles/cmTC_de699.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_de699.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_de699.dir/feature_tests.cxx.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_de699
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de699.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_de699.dir/feature_tests.cxx.o  -o cmTC_de699 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_c0e68/fast 
+/usr/bin/make -f CMakeFiles/cmTC_c0e68.dir/build.make CMakeFiles/cmTC_c0e68.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0e68.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_c0e68.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c0e68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0e68.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c0e68.dir/feature_tests.cxx.o  -o cmTC_c0e68 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++17] compiler features compiled with the following output:
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_de1f1/fast 
+/usr/bin/make -f CMakeFiles/cmTC_de1f1.dir/build.make CMakeFiles/cmTC_de1f1.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_de1f1.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_de1f1.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_de1f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de1f1.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_de1f1.dir/feature_tests.cxx.o  -o cmTC_de1f1 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -417,17 +623,17 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4ca6f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4ca6f.dir/build.make CMakeFiles/cmTC_4ca6f.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4ca6f.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_4ca6f.dir/feature_tests.cxx.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4ca6f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ca6f.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_4ca6f.dir/feature_tests.cxx.o  -o cmTC_4ca6f 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_0e2ae/fast 
+/usr/bin/make -f CMakeFiles/cmTC_0e2ae.dir/build.make CMakeFiles/cmTC_0e2ae.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0e2ae.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_0e2ae.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0e2ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e2ae.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0e2ae.dir/feature_tests.cxx.o  -o cmTC_0e2ae 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -490,17 +696,17 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b03af/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b03af.dir/build.make CMakeFiles/cmTC_b03af.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b03af.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_b03af.dir/feature_tests.cxx.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b03af
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b03af.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_b03af.dir/feature_tests.cxx.o  -o cmTC_b03af 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_d779f/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d779f.dir/build.make CMakeFiles/cmTC_d779f.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d779f.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_d779f.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d779f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d779f.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d779f.dir/feature_tests.cxx.o  -o cmTC_d779f 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -563,17 +769,17 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52440/fast"
-/usr/bin/make -f CMakeFiles/cmTC_52440.dir/build.make CMakeFiles/cmTC_52440.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_52440.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_52440.dir/feature_tests.cxx.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_52440
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52440.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_52440.dir/feature_tests.cxx.o  -o cmTC_52440 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_d43d8/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d43d8.dir/build.make CMakeFiles/cmTC_d43d8.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d43d8.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_d43d8.dir/feature_tests.cxx.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d43d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d43d8.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d43d8.dir/feature_tests.cxx.o  -o cmTC_d43d8 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -634,370 +840,330 @@ make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFile
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Detecting C OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_29671/fast"
-/usr/bin/make -f CMakeFiles/cmTC_29671.dir/build.make CMakeFiles/cmTC_29671.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o
-/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Run Build Command(s):/usr/bin/make cmTC_b52d5/fast 
+/usr/bin/make -f CMakeFiles/cmTC_b52d5.dir/build.make CMakeFiles/cmTC_b52d5.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o
+/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o -version -fopenmp -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccWPJTvN.s
-GNU C11 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+gcc version 8.2.1 20181127 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccy4nMUw.s
+GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
 
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include
  /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
- /usr/include/x86_64-linux-gnu
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed
  /usr/include
 End of search list.
-GNU C11 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
 
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: c8081a99abb72bbfd9129549110a350c
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o /tmp/ccWPJTvN.s
-Gnu assembler versão 2.30 (x86_64-linux-gnu) usando versão BFD (GNU Binutils for Ubuntu) 2.30
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking C executable cmTC_29671
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29671.dir/link.txt --verbose=1
-/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o  -o cmTC_29671 -v 
+Compiler executable checksum: 0c14e25c3256cb739a3fd5c231a3c41d
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o /tmp/ccy4nMUw.s
+GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking C executable cmTC_b52d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b52d5.dir/link.txt --verbose=1
+/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o  -o cmTC_b52d5 -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_29671' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgokkTO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_29671 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_29671' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+gcc version 8.2.1 20181127 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_b52d5' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoxiKv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b52d5 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_b52d5' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_29671/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_29671.dir/build.make CMakeFiles/cmTC_29671.dir/build]
-  ignore line: [make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o]
-  ignore line: [/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b52d5/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b52d5.dir/build.make CMakeFiles/cmTC_b52d5.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o]
+  ignore line: [/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o -version -fopenmp -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccWPJTvN.s]
-  ignore line: [GNU C11 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccy4nMUw.s]
+  ignore line: [GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
   ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C11 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
+  ignore line: [GNU C17 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
   ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: c8081a99abb72bbfd9129549110a350c]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o /tmp/ccWPJTvN.s]
-  ignore line: [Gnu assembler versão 2.30 (x86_64-linux-gnu) usando versão BFD (GNU Binutils for Ubuntu) 2.30]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking C executable cmTC_29671]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29671.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o  -o cmTC_29671 -v ]
+  ignore line: [Compiler executable checksum: 0c14e25c3256cb739a3fd5c231a3c41d]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o /tmp/ccy4nMUw.s]
+  ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking C executable cmTC_b52d5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b52d5.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o  -o cmTC_b52d5 -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_29671' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgokkTO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_29671 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_b52d5' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoxiKv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b52d5 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccgokkTO.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNoxiKv.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_29671] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [cmTC_b52d5] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_29671.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+    arg [CMakeFiles/cmTC_b52d5.dir/OpenMPTryFlag.c.o] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
+    arg [--no-as-needed] ==> ignore
     arg [-lpthread] ==> lib [pthread]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
   implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
   implicit fwks: []
 
 
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a7628/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a7628.dir/build.make CMakeFiles/cmTC_a7628.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o
-/usr/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Run Build Command(s):/usr/bin/make cmTC_803ba/fast 
+/usr/bin/make -f CMakeFiles/cmTC_803ba.dir/build.make CMakeFiles/cmTC_803ba.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++    -Wall -Wextra -fopenmp -v   -o CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fstack-protector-strong -Wformat -Wformat-security -o /tmp/cc0yVy1T.s
-GNU C++14 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+gcc version 8.2.1 20181127 (GCC) 
+COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -Wall -Wextra -version -fopenmp -o /tmp/ccbMYpmy.s
+GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
 
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/include/c++/7
- /usr/include/x86_64-linux-gnu/c++/7
- /usr/include/c++/7/backward
- /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include
  /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
- /usr/include/x86_64-linux-gnu
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed
  /usr/include
 End of search list.
-GNU C++14 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP
 
+warning: MPFR header version 4.0.1 differs from library version 4.0.2.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 1bfae38ae5df64de6196cbd8c3b07d86
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o /tmp/cc0yVy1T.s
-Gnu assembler versão 2.30 (x86_64-linux-gnu) usando versão BFD (GNU Binutils for Ubuntu) 2.30
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking CXX executable cmTC_a7628
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7628.dir/link.txt --verbose=1
-/usr/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o  -o cmTC_a7628 -v 
+Compiler executable checksum: c228073cd86637479fc341ff509ca7e7
+COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o /tmp/ccbMYpmy.s
+GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_803ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_803ba.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -fopenmp -v    -rdynamic CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o  -o cmTC_803ba -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a7628' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw5dGmW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a7628 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a7628' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+gcc version 8.2.1 20181127 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec
+COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_803ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKSHNLB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_803ba /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_803ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a7628/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a7628.dir/build.make CMakeFiles/cmTC_a7628.dir/build]
-  ignore line: [make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/usr/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_803ba/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_803ba.dir/build.make CMakeFiles/cmTC_803ba.dir/build]
+  ignore line: [make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/usr/bin/c++    -Wall -Wextra -fopenmp -v   -o CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fstack-protector-strong -Wformat -Wformat-security -o /tmp/cc0yVy1T.s]
-  ignore line: [GNU C++14 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -Wall -Wextra -version -fopenmp -o /tmp/ccbMYpmy.s]
+  ignore line: [GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
   ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/7]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/7]
-  ignore line: [ /usr/include/c++/7/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (Ubuntu 7.3.0-27ubuntu1~18.04) version 7.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
+  ignore line: [GNU C++14 (GCC) version 8.2.1 20181127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.2.1 20181127, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.20-GMP]
   ignore line: []
+  ignore line: [warning: MPFR header version 4.0.1 differs from library version 4.0.2.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 1bfae38ae5df64de6196cbd8c3b07d86]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o /tmp/cc0yVy1T.s]
-  ignore line: [Gnu assembler versão 2.30 (x86_64-linux-gnu) usando versão BFD (GNU Binutils for Ubuntu) 2.30]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_a7628]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7628.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o  -o cmTC_a7628 -v ]
+  ignore line: [Compiler executable checksum: c228073cd86637479fc341ff509ca7e7]
+  ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o /tmp/ccbMYpmy.s]
+  ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_803ba]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_803ba.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -Wall -Wextra -fopenmp -v    -rdynamic CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o  -o cmTC_803ba -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a7628' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw5dGmW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a7628 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+  ignore line: [gcc version 8.2.1 20181127 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_803ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKSHNLB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_803ba /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccw5dGmW.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKSHNLB.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a7628] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [cmTC_803ba] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_a7628.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+    arg [CMakeFiles/cmTC_803ba.dir/OpenMPTryFlag.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgomp] ==> lib [gomp]
@@ -1007,33 +1173,29 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtoffloadend.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
   implicit fwks: []
 
 
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
+Change Dir: /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4fa37/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4fa37.dir/build.make CMakeFiles/cmTC_4fa37.dir/build
-make[1]: Entering directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4fa37.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_4fa37.dir/CheckIncludeFile.c.o   -c /home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_4fa37
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fa37.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4fa37.dir/CheckIncludeFile.c.o  -o cmTC_4fa37 
-make[1]: Leaving directory '/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_8f9bc/fast 
+/usr/bin/make -f CMakeFiles/cmTC_8f9bc.dir/build.make CMakeFiles/cmTC_8f9bc.dir/build
+make[1]: Entering directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f9bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8f9bc.dir/CheckIncludeFile.c.o   -c /home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8f9bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f9bc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8f9bc.dir/CheckIncludeFile.c.o  -o cmTC_8f9bc 
+make[1]: Leaving directory '/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/CMakeTmp'
 
 

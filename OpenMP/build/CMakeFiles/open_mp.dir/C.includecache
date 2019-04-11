@@ -6,43 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/udesc/Repositories/OPRP/OpenMP/include/benchmarks.h
-stdio.h
--
-stdlib.h
--
-pthread.h
--
-sys/time.h
--
-
-/home/udesc/Repositories/OPRP/OpenMP/include/matrix.h
+/home/d/UDESC/OPRP/OpenMP/include/matrix.h
 stdlib.h
 -
 
-/home/udesc/Repositories/OPRP/OpenMP/src/benchmarks.c
-../include/benchmarks.h
-/home/udesc/Repositories/OPRP/OpenMP/include/benchmarks.h
-math.h
--
-../include/matrix.h
-/home/udesc/Repositories/OPRP/OpenMP/include/matrix.h
-
-/home/udesc/Repositories/OPRP/OpenMP/src/main.c
-stdio.h
--
-stdlib.h
--
-pthread.h
--
-sys/time.h
--
-../include/matrix.h
-/home/udesc/Repositories/OPRP/OpenMP/include/matrix.h
-../include/benchmarks.h
-/home/udesc/Repositories/OPRP/OpenMP/include/benchmarks.h
-
-/home/udesc/Repositories/OPRP/OpenMP/src/matrix.c
+/home/d/UDESC/OPRP/OpenMP/src/matrix.c
 stdlib.h
 -
 stdio.h
@@ -54,5 +22,5 @@ string.h
 omp.h
 -
 ../include/matrix.h
-/home/udesc/Repositories/OPRP/OpenMP/include/matrix.h
+/home/d/UDESC/OPRP/OpenMP/include/matrix.h
 

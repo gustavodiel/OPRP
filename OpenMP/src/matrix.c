@@ -96,9 +96,8 @@ matrix_t *matrix_sum(matrix_t *A, matrix_t *B) {
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
 
-#pragma omp parallel for private(i, j) shared(resultado, A, B)
+#pragma omp parallel for private(i, j) shared(resultado, A, B) num_threads(8)
     for (i = 0; i < rows_final; i++) {
-#pragma omp parallel for private(i, j) shared(resultado, A, B)
         for (j = 0; j < cols_final; j++) {
             resultado->data[i][j] = A->data[i][j] + B->data[i][j];
         }
@@ -143,15 +142,18 @@ void quick_sort(double *vector, int low, int high) {
     if (low < high) {
         int part = partition(vector, low, high);
 
-#pragma omp parallel default(shared)
+#pragma omp sections
+{
+#pragma omp section
         {
             quick_sort(vector, low, part - 1);
         }
-#pragma omp parallel default(shared)
+#pragma omp section
         {
             quick_sort(vector, part + 1, high);
         }
     }
+}
 }
 
 void swap(double *a, double *b) {

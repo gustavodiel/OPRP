@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/udesc/Repositories/OPRP/OpenMP/src/benchmarks.c" "/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/benchmarks.c.o"
-  "/home/udesc/Repositories/OPRP/OpenMP/src/main.c" "/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/main.c.o"
-  "/home/udesc/Repositories/OPRP/OpenMP/src/matrix.c" "/home/udesc/Repositories/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/matrix.c.o"
+  "/home/d/UDESC/OPRP/OpenMP/src/benchmarks.c" "/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/benchmarks.c.o"
+  "/home/d/UDESC/OPRP/OpenMP/src/main.c" "/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/main.c.o"
+  "/home/d/UDESC/OPRP/OpenMP/src/matrix.c" "/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/open_mp.dir/src/matrix.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
