@@ -19,13 +19,14 @@ int main(int argc, char **argv)
 
     int tests = 10;
 
-    for (int i = 0; i < numTries; ++i) {
-        omp_set_num_threads(threads[i]);
-        sum_benchmark(sumCols, sumCols, tests, threads[i]);
-    }
+    // for (int i = 0; i < numTries; ++i) {
+    //     omp_set_num_threads(threads[i]);
+    //     sum_benchmark(sumCols, sumCols, tests, threads[i]);
+    // }
 
     for (int i = 0; i < numTries; ++i) {
         omp_set_num_threads(threads[i]);
+        omp_set_nested(1);
         sort_benchmark(sortCols, sortCols, tests, threads[i]);
     }
 

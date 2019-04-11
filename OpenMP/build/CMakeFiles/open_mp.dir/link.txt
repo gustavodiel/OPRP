@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/open_mp.dir/src/matrix.c.o CMakeFiles/open_mp.dir/src/benchmarks.c.o CMakeFiles/open_mp.dir/src/main.c.o  -o open_mp -lm -lgomp -lpthread -pthread 

@@ -96,7 +96,7 @@ matrix_t *matrix_sum(matrix_t *A, matrix_t *B) {
 
     matrix_t *resultado = matrix_create(rows_final, cols_final);
 
-#pragma omp parallel for private(i, j) shared(resultado, A, B) num_threads(8)
+#pragma omp parallel for private(i, j) shared(resultado, A, B)
     for (i = 0; i < rows_final; i++) {
         for (j = 0; j < cols_final; j++) {
             resultado->data[i][j] = A->data[i][j] + B->data[i][j];
@@ -114,7 +114,7 @@ matrix_t *matrix_sort(matrix_t *A) {
 
     memcpy(resultado->data[0], A->data[0], cols_final * rows_final * sizeof(double));
 
-    quick_sort(resultado->data[0], 0, rows_final * cols_final - 1);
+    quick_sort(resultado->data[0], 0, rows_final * cols_final - 1, 0);
 
     return resultado;
 }
@@ -124,7 +124,6 @@ int partition(double *vector, int low, int high) {
     int i = (low - 1);
     int j;
 
-#pragma omp parallel for default(shared) private(j)
     for (j = low; j <= high - 1; j++)
     {
         if (vector[j] <= pivot)
@@ -138,22 +137,32 @@ int partition(double *vector, int low, int high) {
     return (i + 1);
 }
 
-void quick_sort(double *vector, int low, int high) {
+void quick_sort(double *vector, int low, int high, int deep) {
     if (low < high) {
         int part = partition(vector, low, high);
 
-#pragma omp sections
-{
-#pragma omp section
-        {
-            quick_sort(vector, low, part - 1);
+        if (deep * 2 > omp_get_num_threads()) {
+            quick_sort(vector, low, part - 1, deep + 1);
+            quick_sort(vector, part + 1, high, deep + 1);
+            return;
         }
-#pragma omp section
+
+        #pragma omp parallel
         {
-            quick_sort(vector, part + 1, high);
+            #pragma omp sections
+            {
+                #pragma omp section
+                {
+                    quick_sort(vector, low, part - 1, deep + 1);
+                }
+
+                #pragma omp section
+                {
+                    quick_sort(vector, part + 1, high, deep + 1);
+                }
+            }
         }
     }
-}
 }
 
 void swap(double *a, double *b) {

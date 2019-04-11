@@ -1,3 +1,0 @@
-/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/rebuild_cache.dir
-/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/open_mp.dir
-/home/d/UDESC/OPRP/OpenMP/build/CMakeFiles/edit_cache.dir

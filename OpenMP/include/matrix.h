@@ -43,7 +43,7 @@ matrix_t *matrix_sort(matrix_t *);
 
 void matrix_print(matrix_t *);
 
-void quick_sort(double*, int, int);
+void quick_sort(double*, int, int, int);
 void swap(double*, double*);
 
 #endif
