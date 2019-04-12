@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+#include <math.h>
 
 #include <omp.h>
 
@@ -140,13 +141,13 @@ int partition(double *vector, int low, int high) {
 void quick_sort(double *vector, int low, int high, int deep) {
     if (low < high) {
         int part = partition(vector, low, high);
- 
-        if (deep * 2 > omp_get_num_threads()) {
+
+        if (pow(2, (deep + 1)) - 2 > omp_get_max_threads()) {
             quick_sort(vector, low, part - 1, deep + 1);
             quick_sort(vector, part, high, deep + 1);
             return;
         }
-   
+
         #pragma omp parallel
         {
             #pragma omp sections
