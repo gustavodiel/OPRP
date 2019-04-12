@@ -1,0 +1,53 @@
+[SUM ] Total: 2.916642, Average: 0.291664, deviation: 0.004383 for 10 runs
+
+[SUM ] Total: 1.750353, Average: 0.175035, deviation: 0.002305 for 10 runs
+
+[SUM ] Total: 1.278097, Average: 0.127810, deviation: 0.001727 for 10 runs
+
+[SUM ] Total: 1.051838, Average: 0.105184, deviation: 0.001393 for 10 runs
+
+[SUM ] Total: 0.960544, Average: 0.096054, deviation: 0.001432 for 10 runs
+
+[SUM ] Total: 1.014204, Average: 0.101420, deviation: 0.008448 for 10 runs
+
+[SUM ] Total: 1.123822, Average: 0.112382, deviation: 0.013647 for 10 runs
+
+[SUM ] Total: 0.912525, Average: 0.091253, deviation: 0.000612 for 10 runs
+
+[SUM ] Total: 1.038721, Average: 0.103872, deviation: 0.005667 for 10 runs
+
+[SORT] Total: 54.672888, Average: 5.467289, deviation: 0.117232 for 10 runs
+
+[SORT] Total: 41.182660, Average: 4.118266, deviation: 0.062161 for 10 runs
+
+[SORT] Total: 36.708525, Average: 3.670853, deviation: 0.035687 for 10 runs
+
+[SORT] Total: 17.118717, Average: 1.711872, deviation: 0.009689 for 10 runs
+
+[SORT] Total: 41.553554, Average: 4.155355, deviation: 0.053477 for 10 runs
+
+[SORT] Total: 19.654022, Average: 1.965402, deviation: 0.054040 for 10 runs
+
+[SORT] Total: 19.196390, Average: 1.919639, deviation: 0.048889 for 10 runs
+
+[SORT] Total: 21.736201, Average: 2.173620, deviation: 0.017305 for 10 runs
+
+[SORT] Total: 16.521653, Average: 1.652165, deviation: 0.074873 for 10 runs
+
+[MULT] Total: 258.086700, Average: 25.808670, deviation: 0.262642 for 10 runs
+
+[MULT] Total: 128.694700, Average: 12.869470, deviation: 0.068088 for 10 runs
+
+[MULT] Total: 86.783549, Average: 8.678355, deviation: 0.048753 for 10 runs
+
+[MULT] Total: 65.975046, Average: 6.597505, deviation: 0.022412 for 10 runs
+
+[MULT] Total: 52.469763, Average: 5.246976, deviation: 0.012498 for 10 runs
+
+[MULT] Total: 44.307860, Average: 4.430786, deviation: 0.000652 for 10 runs
+
+[MULT] Total: 37.894483, Average: 3.789448, deviation: 0.001172 for 10 runs
+
+[MULT] Total: 33.583000, Average: 3.358300, deviation: 0.006807 for 10 runs
+
+[MULT] Total: 34.418793, Average: 3.441879, deviation: 0.013087 for 10 runs
