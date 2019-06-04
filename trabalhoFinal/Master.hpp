@@ -1,20 +1,25 @@
 #pragma once
 
+#include <vector>
+#include <string>
+
 #include "Worker.hpp"
 
 class Master : public Worker
 {
 private:
-  /* Data */
+	/* Data */
+	std::string hashes;
+
 public:
-  Master(int, int);
-  ~Master();
+	Master(int, int, std::string);
+	~Master();
 
-  void Run();
+	void Run();
 
-  void SigHandler(int);
+	void SigHandler(int);
 
-  static int oi;
+	static int oi;
 
-  static int IsMaster(int rank) { return rank == 0; }
+	static int IsMaster(int rank) { return rank == 0; }
 };

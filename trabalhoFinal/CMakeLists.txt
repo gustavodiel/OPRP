@@ -2,6 +2,10 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(DESCracker VERSION 0.1.0)
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 ### Create project
 add_executable(DESCracker Worker.cpp Master.cpp main.cpp)
 
@@ -9,6 +13,7 @@ add_executable(DESCracker Worker.cpp Master.cpp main.cpp)
 # set(CMAKE_C_FLAGS "-fopenmp")
 
 target_link_libraries(DESCracker gomp)
+target_link_libraries(DESCracker crypt)
 
 ## Add MPI
 find_package(MPI REQUIRED)
