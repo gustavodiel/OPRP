@@ -1,12 +1,28 @@
 #pragma once
 
+#include <string>
+#include <sstream>
+
 class Worker
 {
 protected:
-  int size, rank;
-public:
-  Worker(int, int);
-  ~Worker();
+	int size, rank;
+	int hashesIndex;
 
-  void Run();
+	unsigned long long int passwordsIndex;
+
+	std::string hashes;
+
+public:
+	Worker(int, int);
+	~Worker();
+
+	void Run();
+	std::string GetNextWord();
+	std::string GetWordSalt(std::string);
+	std::string GenerateNextPassword(int);
+
+private:
+	void ConvertBase(unsigned long long int, int, std::stringstream *);
+	void InitializeIndex(int);
 };

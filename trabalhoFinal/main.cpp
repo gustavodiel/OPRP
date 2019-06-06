@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <map>
 #include <string>
 
 #define _XOPEN_SOURCE 700
@@ -25,7 +26,6 @@ void SignalHandler(int);
 
 int main(int argc, char **argv)
 {
-
 	{
 		struct sigaction sa;
 		sa.sa_handler = SignalHandler;
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 
 	if (Master::IsMaster(rank))
 	{
-		std::cout << crypt("alla", "dI") << std::endl;
+		std::cout << crypt("55", "dI") << std::endl;
 
 		std::string hashes;
 		std::string hash;
@@ -53,9 +53,9 @@ int main(int argc, char **argv)
 		{
 			hashes += hash;
 		}
-		std::cout << hashes << std::endl;
+		// std::cout << hashes << std::endl;
 
-		std::cout << "Sending!" << std::endl;
+		// std::cout << "Sending!" << std::endl;
 
 		master = new Master(size, rank, hashes);
 

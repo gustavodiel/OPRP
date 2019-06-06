@@ -29,15 +29,15 @@ void Master::Run()
 	MPI_Bcast(&line_size, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	MPI_Bcast(const_cast<char *>(hashes.data()), line_size, MPI_CHAR, 0, MPI_COMM_WORLD);
 
-	while (true)
-	{
+	// while (true)
+	// {
 
-		if (Master::oi != 0)
-		{
-			std::cout << "Saving..." << std::endl;
-			std::this_thread::sleep_for(std::chrono::milliseconds(500));
-			std::cout << "Saved!" << std::endl;
-			break;
-		}
-	}
+	// 	if (Master::oi != 0)
+	// 	{
+	// 		std::cout << "Saving..." << std::endl;
+	// 		std::this_thread::sleep_for(std::chrono::milliseconds(500));
+	// 		std::cout << "Saved!" << std::endl;
+	// 		break;
+	// 	}
+	// }
 }
