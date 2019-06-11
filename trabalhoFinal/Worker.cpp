@@ -5,9 +5,13 @@
 #include <iostream>
 #include <map>
 #include <cmath>
+#include <iomanip>
 
 #include <mpi.h>
 #include <crypt.h>
+#include <omp.h>
+
+#define to -- >
 
 Worker::Worker(int _size, int _rank) : rank(_rank), size(_size), hashesIndex(0)
 {
@@ -32,76 +36,57 @@ void Worker::Run()
 	// std::cout << this->hashes << std::endl;
 
 	auto word = this->GetNextWord();
-	std::cout << word << " " << this->GetWordSalt(word) << std::endl;
+	// std::cout << word << " " << this->GetWordSalt(word) << std::endl;
 
-	for (auto password_size = 1; password_size <= 1; password_size++)
+	for (auto password_size = 1; password_size <= 3; password_size++)
 	{
 		auto indexPerJob = this->InitializeIndex(password_size);
 
-		while(indexPerJob-->0)
+#pragma omp parallel num_threads(6)
+		while (indexPerJob to 0)
+		{
 			auto password = this->GenerateNextPassword(password_size);
 
-		cache.clear();
+			cache.clear();
 
-		this->hashesIndex = 0;
+			this->hashesIndex = 0;
 
-
-		while (this->hashesIndex < this->hashes.size())
-		{
-			auto hash = GetNextWord();
-
-			auto salt = this->GetWordSalt(hash);
-
-			std::string password_hash;
-
-			if (cache.count(salt) > 0)
+			while (this->hashesIndex < this->hashes.size())
 			{
-				password_hash = cache[salt];
-			}
-			else
-			{
-				password_hash = std::string(crypt(password.c_str(), salt.c_str()));
-			}
+				auto hash = GetNextWord();
 
-			if (password.compare("55") == 0)
-			{
-				std::cout << "AISOsajdouiahjoiadajsoiadjasj\n";
-			}
+				auto salt = this->GetWordSalt(hash);
 
-			std::cout << "Testing password " << password << " with hash " << password_hash << " " << salt << " (" << this->rank << ")" << std::endl;
-			if (password_hash.compare(hash) == 0)
-			{
-				std::cout << "EUREKAAAAAAAAAAAAAA " << password << " is " << password_hash << std::endl;
-			}
+				std::string password_hash;
 
-			this->passwordsIndex++;
+				if (cache.count(salt) > 0)
+				{
+					password_hash = cache[salt];
+				}
+				else
+				{
+					password_hash = std::string(crypt(password.c_str(), salt.c_str()));
+				}
+
+				// std::cout << "Testing password " << password << " with hash " << password_hash << " " << salt << " (" << this->rank << ")" << std::endl;
+				if (password_hash.compare(hash) == 0)
+				{
+					std::cout << "[" << std::setw(3) << this->rank << "] EUREKAAAAAAAAAAAAAA " << password << " is " << password_hash << std::endl;
+				}
+			}
 		}
-		std::cout << " FINISHED! \n";
 	}
-
-	// while (true)
-	// {
-	// 	if (Master::oi != 0)
-	// 	{
-	// 		std::cout << "Killing worker" << std::endl;
-	// 		for (auto i = 0; i < 1000; i++)
-	// 		{
-	// 		}
-	// 		break;
-	// 	}
-	// }
 }
 
 unsigned long long int Worker::InitializeIndex(int size)
 {
 	unsigned long long int totalSenhas = pow(65, size); // Tamanho dicionario
 	unsigned long long int indexesPerJob = totalSenhas / (this->size - 1);
-	unsigned long long int startingIndex = (this->rank - 1) * indexesPerJob;
+	unsigned long long int startingIndex = pow(65, size - 1) + (this->rank - 1) * indexesPerJob;
 
-	std::cout << "StartingINdex: " << startingIndex << std::endl;
 	this->passwordsIndex = startingIndex;
 
-	return indexesPerJob
+	return indexesPerJob;
 }
 
 std::string Worker::GenerateNextPassword(int size)
@@ -123,7 +108,6 @@ std::string Worker::GetWordSalt(std::string word)
 
 std::string Worker::GetNextWord()
 {
-	std::cout << this->hashesIndex << " ";
 	std::stringstream result;
 
 	auto wordSize = 13;
@@ -150,5 +134,4 @@ void Worker::ConvertBase(unsigned long long int index, int base, std::stringstre
 		*s << dicionario[value];
 		this->ConvertBase(index / base, base, s);
 	}
-	std::cout << "Index: " << index << "s: " << s->str() << std::endl;
 }

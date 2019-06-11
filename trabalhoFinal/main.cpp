@@ -44,8 +44,6 @@ int main(int argc, char **argv)
 
 	if (Master::IsMaster(rank))
 	{
-		std::cout << crypt("55", "dI") << std::endl;
-
 		std::string hashes;
 		std::string hash;
 
@@ -53,10 +51,6 @@ int main(int argc, char **argv)
 		{
 			hashes += hash;
 		}
-		// std::cout << hashes << std::endl;
-
-		// std::cout << "Sending!" << std::endl;
-
 		master = new Master(size, rank, hashes);
 
 		master->Run();
