@@ -24,5 +24,5 @@ public:
 
 private:
 	void ConvertBase(unsigned long long int, int, std::stringstream *);
-	void InitializeIndex(int);
+	unsigned long long int InitializeIndex(int);
 };

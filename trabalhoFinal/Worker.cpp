@@ -9,7 +9,7 @@
 #include <mpi.h>
 #include <crypt.h>
 
-Worker::Worker(int _size, int _rank) : rank(_rank), size(_size)
+Worker::Worker(int _size, int _rank) : rank(_rank), size(_size), hashesIndex(0)
 {
 }
 
@@ -29,18 +29,22 @@ void Worker::Run()
 	MPI_Bcast(const_cast<char *>(hashes.data()), line_size, MPI_CHAR, 0, MPI_COMM_WORLD);
 
 	std::map<std::string, std::string> cache;
+	// std::cout << this->hashes << std::endl;
 
 	auto word = this->GetNextWord();
-	// std::cout << word << " " << this->GetWordSalt(word) << std::endl;
+	std::cout << word << " " << this->GetWordSalt(word) << std::endl;
 
-	for (auto password_size = 1; password_size <= 8; password_size++)
+	for (auto password_size = 1; password_size <= 1; password_size++)
 	{
-		this->InitializeIndex(password_size);
-		auto password = this->GenerateNextPassword(password_size);
+		auto indexPerJob = this->InitializeIndex(password_size);
+
+		while(indexPerJob-->0)
+			auto password = this->GenerateNextPassword(password_size);
 
 		cache.clear();
 
 		this->hashesIndex = 0;
+
 
 		while (this->hashesIndex < this->hashes.size())
 		{
@@ -88,13 +92,16 @@ void Worker::Run()
 	// }
 }
 
-void Worker::InitializeIndex(int size)
+unsigned long long int Worker::InitializeIndex(int size)
 {
 	unsigned long long int totalSenhas = pow(65, size); // Tamanho dicionario
-	unsigned long long int indexesPerJob = totalSenhas / this->size;
-	unsigned long long int startingIndex = this->rank * indexesPerJob;
+	unsigned long long int indexesPerJob = totalSenhas / (this->size - 1);
+	unsigned long long int startingIndex = (this->rank - 1) * indexesPerJob;
 
+	std::cout << "StartingINdex: " << startingIndex << std::endl;
 	this->passwordsIndex = startingIndex;
+
+	return indexesPerJob
 }
 
 std::string Worker::GenerateNextPassword(int size)
@@ -103,7 +110,8 @@ std::string Worker::GenerateNextPassword(int size)
 
 	std::stringstream password;
 
-	this->ConvertBase(passwordsIndex, 65, &password);
+	this->ConvertBase(this->passwordsIndex, 65, &password);
+	this->passwordsIndex++;
 
 	return password.str();
 }
@@ -115,7 +123,7 @@ std::string Worker::GetWordSalt(std::string word)
 
 std::string Worker::GetNextWord()
 {
-	this->hashesIndex;
+	std::cout << this->hashesIndex << " ";
 	std::stringstream result;
 
 	auto wordSize = 13;
@@ -134,12 +142,13 @@ void Worker::ConvertBase(unsigned long long int index, int base, std::stringstre
 {
 	static const auto dicionario = " ./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-	if (index == 0)
-		*s << dicionario[0];
+	if (index < base)
+		*s << dicionario[index];
 	else
 	{
 		unsigned long long int value = index % base;
 		*s << dicionario[value];
 		this->ConvertBase(index / base, base, s);
 	}
+	std::cout << "Index: " << index << "s: " << s->str() << std::endl;
 }

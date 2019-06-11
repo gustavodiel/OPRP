@@ -17,12 +17,12 @@ int main(int argc, char **argv)
     int threads[] = {1, 2, 3, 4, 5 , 6, 7, 8, 16};
     int numTries = sizeof(threads) / sizeof(threads[0]);
 
-    int tests = 10;
+    int tests = 2;
 
-    for (int i = 0; i < numTries; ++i) {
-        omp_set_num_threads(threads[i]);
-        sum_benchmark(sumCols, sumCols, tests, threads[i]);
-    }
+    // for (int i = 0; i < numTries; ++i) {
+    //     omp_set_num_threads(threads[i]);
+    //     sum_benchmark(sumCols, sumCols, tests, threads[i]);
+    // }
 
     for (int i = 0; i < numTries; ++i) {
         omp_set_num_threads(threads[i]);
