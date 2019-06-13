@@ -38,12 +38,17 @@ void Worker::Run()
 	auto word = this->GetNextWord();
 	// std::cout << word << " " << this->GetWordSalt(word) << std::endl;
 
-	for (auto password_size = 1; password_size <= 3; password_size++)
+	for (auto password_size = 2; password_size <= 8; password_size++)
 	{
 		auto indexPerJob = this->InitializeIndex(password_size);
 
-#pragma omp parallel num_threads(6)
-		while (indexPerJob to 0)
+		crypt_data data;
+		data.initialized = 0;
+
+		std::cout << "[" << std::setw(3) << this->rank << "] Going to process " << indexPerJob << " passwords (" << password_size << ")" << std::endl;
+
+#pragma omp parallel for num_threads(6) private(data) shared(password_size) schedule(dynamic) nowait
+		for (int i = 0; i < indexPerJob; i++)
 		{
 			auto password = this->GenerateNextPassword(password_size);
 
@@ -65,7 +70,7 @@ void Worker::Run()
 				}
 				else
 				{
-					password_hash = std::string(crypt(password.c_str(), salt.c_str()));
+					password_hash = std::string(crypt_r(password.c_str(), salt.c_str(), &data));
 				}
 
 				// std::cout << "Testing password " << password << " with hash " << password_hash << " " << salt << " (" << this->rank << ")" << std::endl;
