@@ -18,7 +18,7 @@ public:
 	~Worker();
 
 	void Run();
-	std::string GetNextWord();
+	std::string GetNextWord(int);
 	std::string GetWordSalt(std::string);
 	std::string GenerateNextPassword(int);
 

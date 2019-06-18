@@ -10,7 +10,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(DESCracker Worker.cpp Master.cpp main.cpp)
 
 ### Set build flags
-# set(CMAKE_C_FLAGS "-fopenmp")
+set(CMAKE_C_FLAGS "-fopenmp")
+set(CMAKE_CXX_FLAGS "-fopenmp")
 
 target_link_libraries(DESCracker gomp)
 target_link_libraries(DESCracker crypt)
