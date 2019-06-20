@@ -35,7 +35,7 @@ void Worker::Run()
 	MPI_Bcast(const_cast<char *>(hashes.data()), line_size, MPI_CHAR, 0, MPI_COMM_WORLD);
 	int i, rank = this->rank;
 
-	for (auto password_size = 1; password_size <= 1; password_size++)
+	for (auto password_size = 1; password_size <= 8; password_size++)
 	{
 		auto indexPerJob = this->InitializeIndex(password_size);
 
@@ -44,45 +44,34 @@ void Worker::Run()
 
 		std::cout << "[" << std::setw(3) << this->rank << "] Going to process " << indexPerJob << " passwords (" << password_size << ")" << std::endl;
 
-		std::map<std::string, std::string> cache;
-
-#pragma omp parallel for num_threads(2) private(i, cache) shared(password_size, data, rank) schedule(dynamic)
+#pragma omp parallel num_threads(14) private(i, data) shared(password_size, rank)
+#pragma omp for schedule(dynamic)
 		for (i = 0; i < indexPerJob; i++)
 		{
 			auto password = this->GenerateNextPassword(password_size);
-
-			// std::cout << "[" << std::setw(3) << this->rank << "-" << omp_get_thread_num() << "] Testing password " << password << std::endl;
-
-			// this->hashesIndex = 0;
 			int hashesIndex = 0;
 
 			while (hashesIndex < this->hashes.size())
 			{
+				std::string password_hash;
 				auto hash = this->GetNextWord(hashesIndex);
-				hashesIndex += HASH_SIZE;
-
 				auto salt = this->GetWordSalt(hash);
 
-				std::string password_hash;
+				hashesIndex += HASH_SIZE;
 
-				if (cache.count(salt) > 0)
+				auto cryptHash = crypt_r(password.c_str(), salt.c_str(), &data);
+
+				if (cryptHash == NULL)
 				{
-					password_hash = cache[salt];
-				}
-				else
-				{
-					auto pwHash = crypt_r(password.c_str(), salt.c_str(), &data);
-					if (pwHash == NULL)
-					{
-						std::cout << "NUUUUUUUUUUUUUUUUUUUUl [" << salt << "] [" << hash << "] " << this->hashes << std::endl;
-					}
-					password_hash = std::string(pwHash);
+					std::cout << "NUUUUUUUUUUUUUUUUUUUULL [" << salt << "] [" << hash << "] " << this->hashes << std::endl;
 				}
 
-				std::cout << "Testing password " << password << " with hash " << password_hash << " [" << hash << "] [" << salt << "] (" << this->rank << ")" << std::endl;
-				if (password_hash.compare(hash) == 0)
+				password_hash = std::string(cryptHash);
+
+				// std::cout << "Testing password " << password << " with hash " << password_hash << " [" << hash << "] [" << salt << "] (" << omp_get_thread_num() << ") got: " << password_hash.compare(hash) << std::endl;
+				if (password_hash[3] == hash[3] && password_hash.compare(hash) == 0)
 				{
-					// std::cout << "[" << std::setw(3) << rank << "] EUREKAAAAAAAAAAAAAA " << password << " is " << password_hash << std::endl;
+					std::cout << "[" << std::setw(3) << rank << "] EUREKAAAAAAAAAAAAAA \"" << password << "\" is " << password_hash << std::endl;
 				}
 			}
 		}

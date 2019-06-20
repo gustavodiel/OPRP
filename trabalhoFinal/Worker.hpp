@@ -9,6 +9,8 @@ protected:
 	int size, rank;
 	int hashesIndex;
 
+	bool shouldDoBCast;
+
 	unsigned long long int passwordsIndex;
 
 	std::string hashes;
