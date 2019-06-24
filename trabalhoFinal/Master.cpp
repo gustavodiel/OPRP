@@ -1,26 +1,22 @@
 #include "Master.hpp"
 
 #include <iostream>
-#include <chrono>
-#include <thread>
+#include <map>
+#include <cmath>
+#include <iomanip>
 
 #include <mpi.h>
+#include <crypt.h>
 
-#define forever for (;;)
+#define HASH_SIZE 13
 
-int Master::oi = 0;
 
-Master::Master(int size, int rank, std::string hashes) : Worker(size, rank), hashes(hashes)
+Master::Master(int size, int rank, std::string hashes) : Worker(size, rank), hashes(std::move(hashes))
 {
 }
 
 Master::~Master()
 {
-}
-
-void Master::SigHandler(int s)
-{
-	std::cout << "Exiting " << std::endl;
 }
 
 void Master::Run()
@@ -31,25 +27,59 @@ void Master::Run()
 	MPI_Bcast(&line_size, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	MPI_Bcast(const_cast<char *>(hashes.data()), line_size, MPI_CHAR, 0, MPI_COMM_WORLD);
 
-	// forever
-	// {
-	// 	int size = 8 + 1 + 13;
-	// 	char oi[size];
-	// 	MPI_Status status;
+    int passwordSize = 3;
+    auto indexPerJob = powerOf65(passwordSize);
+    this->passwordsIndex = 0;
 
-	// 	MPI_Recv(oi, size, MPI_CHAR, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &status);
-	// 	std::cout << oi << std::endl;
-	// }
+    crypt_data data;
+    data.initialized = 0;
 
-	// while (true)
-	// {
+    auto salt = new char(3);
 
-	// 	if (Master::oi != 0)
-	// 	{
-	// 		std::cout << "Saving..." << std::endl;
-	// 		std::this_thread::sleep_for(std::chrono::milliseconds(500));
-	// 		std::cout << "Saved!" << std::endl;
-	// 		break;
-	// 	}
-	// }
+    std::cout << "[" << std::setw(3) << this->rank << "] Going to process " << indexPerJob << " passwords (" << passwordSize << ")" << std::endl;
+
+    int hashesSize = this->hashes.size();
+
+    for (auto i = 0; i < indexPerJob; i++)
+    {
+        auto password = this->GenerateNextPassword();
+        int lHashesIndex = 0;
+
+        while (lHashesIndex < hashesSize)
+        {
+            std::string password_hash;
+            auto hash = this->GetNextWord(lHashesIndex);
+            GetWordSalt(hash, salt);
+
+            lHashesIndex += HASH_SIZE;
+
+            auto cryptHash = crypt_r(password.c_str(), salt, &data);
+
+            if (!cryptHash)
+            {
+                std::cout << "NUUUUUUUUUUUUUUUUUUUULL [" << salt << "] [" << hash << "] " << this->hashes << std::endl;
+            }
+
+            password_hash = std::string(cryptHash);
+
+            if (password_hash[3] == hash[3] && password_hash == hash)
+            {
+                std::cout << "[" << std::setw(3) << this->rank << "] EUREKAAAAAAAAAAAAAA \"" << password << "\" is " << password_hash << std::endl;
+            }
+        }
+    }
+
 }
+
+std::string Master::GetNextWord(int hashesIndex)
+{
+    return this->hashes.substr(hashesIndex, HASH_SIZE);
+}
+
+void Master::GetWordSalt(std::string & word, char* salt)
+{
+    salt[0] = word[0];
+    salt[1] = word[1];
+    salt[2] = '\0';
+}
+

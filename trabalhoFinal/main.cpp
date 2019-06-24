@@ -19,25 +19,9 @@
 int rank = 0;
 int size = 0;
 
-static Master *master;
-
-void SetupSigAbort();
-void SignalHandler(int);
-
 int main(int argc, char **argv)
 {
-	{
-		struct sigaction sa;
-		sa.sa_handler = SignalHandler;
-		sigemptyset(&sa.sa_mask);
-		sa.sa_flags = 0;
-		sigaction(SIGINT, &sa, NULL);
-		sigaction(SIGKILL, &sa, NULL);
-		sigaction(SIGTERM, &sa, NULL);
-		sigaction(SIGQUIT, &sa, NULL);
-	}
-
-	MPI_Init(NULL, NULL);
+	MPI_Init(nullptr, nullptr);
 
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -51,7 +35,7 @@ int main(int argc, char **argv)
 		{
 			hashes += hash;
 		}
-		master = new Master(size, rank, hashes);
+        Master *master = new Master(size, rank, hashes);
 
 		master->Run();
 	}
@@ -63,11 +47,4 @@ int main(int argc, char **argv)
 
 	MPI_Finalize();
 	return 0;
-}
-
-void SignalHandler(int signal)
-{
-	std::cout << "Got " << signal << std::endl;
-
-	Master::oi = 10;
 }
