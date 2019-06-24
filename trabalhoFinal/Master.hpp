@@ -19,7 +19,7 @@ public:
 
 	static int IsMaster(int rank) { return rank == 0; }
 
-    static inline void GetWordSalt(std::string&, char*);
+	static inline void GetWordSalt(std::string&, char*);
 
 protected:
     std::string GetNextWord(int hashesIndex) override;

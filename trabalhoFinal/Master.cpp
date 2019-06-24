@@ -8,6 +8,8 @@
 #include <mpi.h>
 #include <crypt.h>
 
+#include "colors.hpp"
+
 #define HASH_SIZE 13
 
 
@@ -21,14 +23,12 @@ Master::~Master()
 
 void Master::Run()
 {
-	std::cout << "Master with rank " << this->rank << " out of " << this->size << "\n";
-
 	int line_size = hashes.size();
 	MPI_Bcast(&line_size, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	MPI_Bcast(const_cast<char *>(hashes.data()), line_size, MPI_CHAR, 0, MPI_COMM_WORLD);
 
     int passwordSize = 3;
-    auto indexPerJob = powerOf65(passwordSize);
+    const auto indexPerJob = powerOf65(1) + powerOf65(2) + powerOf65(3);
     this->passwordsIndex = 0;
 
     crypt_data data;
@@ -36,7 +36,7 @@ void Master::Run()
 
     auto salt = new char(3);
 
-    std::cout << "[" << std::setw(3) << this->rank << "] Going to process " << indexPerJob << " passwords (" << passwordSize << ")" << std::endl;
+    std::cout << BOLDCYAN << "[" << BOLDRED << "MASTER" << BOLDCYAN <<"] " << GREEN << "Going to process " << BOLDMAGENTA << indexPerJob << GREEN << " passwords (" << WHITE << "size of " << BOLDBLUE << "1, 2, and 3" << GREEN << ")" << RESET << std::endl;
 
     int hashesSize = this->hashes.size();
 
@@ -57,14 +57,14 @@ void Master::Run()
 
             if (!cryptHash)
             {
-                std::cout << "NUUUUUUUUUUUUUUUUUUUULL [" << salt << "] [" << hash << "] " << this->hashes << std::endl;
+                std::cout << BOLDRED << "NUUUUUUUUUUUUUUUUUUUULL [" << salt << "] [" << hash << "] " << this->hashes << RESET << std::endl;
             }
 
             password_hash = std::string(cryptHash);
 
             if (password_hash[3] == hash[3] && password_hash == hash)
             {
-                std::cout << "[" << std::setw(3) << this->rank << "] EUREKAAAAAAAAAAAAAA \"" << password << "\" is " << password_hash << std::endl;
+                std::cout << BOLDCYAN << "[" << BOLDRED << "MASTER" << BOLDCYAN <<"]" << GREEN << " EUREKAAAAAAAAAAAAAA found password \"" << BOLDWHITE << password << GREEN << "\" of hash " << BOLDMAGENTA << password_hash << RESET << std::endl;
             }
         }
     }

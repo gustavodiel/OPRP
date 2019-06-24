@@ -11,6 +11,8 @@
 #include <crypt.h>
 #include <omp.h>
 
+#include "colors.hpp"
+
 #define HASH_SIZE 13
 
 Worker::Worker(int _size, int _rank) : rank(_rank), size(_size)
@@ -33,18 +35,18 @@ void Worker::Run()
 
     for (auto passwordSize = 4; passwordSize <= 8; passwordSize++)
 	{
-		auto indexPerJob = this->InitializeIndex(passwordSize);
+		const auto indexPerJob = this->InitializeIndex(passwordSize);
 
 		crypt_data data;
 		data.initialized = 0;
 
-        std::cout << "[" << std::setw(3) << lRank << "] Going to process " << indexPerJob << " passwords (" << passwordSize << ")" << std::endl;
+		std::cout << BOLDCYAN << "[" << BOLDRED << std::setw(6) << lRank << BOLDCYAN <<"] " << GREEN << "Going to process " << BOLDMAGENTA << indexPerJob << GREEN << " passwords (" << WHITE << "size of " << BOLDBLUE << passwordSize << GREEN << ")" << RESET << std::endl;
 
 #pragma omp parallel num_threads(6) private(i, data) shared(passwordSize, lRank, hashesSize)
 #pragma omp for schedule(dynamic)
 		for (i = 0; i < indexPerJob; i++)
 		{
-			auto password = this->GenerateNextPassword();
+			const auto password = this->GenerateNextPassword();
 			int lHashesIndex = 0;
 
             char salt[3];
@@ -54,9 +56,9 @@ void Worker::Run()
 				std::string password_hash;
 				auto hash = this->GetNextWord(lHashesIndex);
 
-                GetWordSalt(hash, salt);
+				GetWordSalt(hash, salt);
 
-                lHashesIndex += HASH_SIZE;
+				lHashesIndex += HASH_SIZE;
 
 				auto cryptHash = crypt_r(password.c_str(), salt, &data);
 
@@ -65,8 +67,8 @@ void Worker::Run()
 				if (password_hash[3] == hash[3])
 				{
 				    if (password_hash == hash) {
-                        std::cout << "[" << std::setw(3) << lRank << "] EUREKAAAAAAAAAAAAAA \"" << password << "\" is " << password_hash << std::endl;
-				    }
+				    	std::cout << BOLDCYAN << "[" << BOLDRED << std::setw(6) << lRank << BOLDCYAN <<"]" << GREEN << " EUREKAAAAAAAAAAAAAA found password \"" << BOLDWHITE << password << GREEN << "\" of hash " << BOLDMAGENTA << password_hash << RESET << std::endl;
+					}
 				}
 			}
 		}
